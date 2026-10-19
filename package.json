@@ -1,0 +1,11 @@
+{
+  "name": "between-the-lines",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A small hand-drawn archive of unexplained coincidences",
+  "scripts": {
+    "dev": "python3 -m http.server 5173 --bind 127.0.0.1",
+    "start": "python3 -m http.server 5173 --bind 127.0.0.1",
+    "check": "node --check script.js"
+  }
+}
