@@ -2,10 +2,11 @@
   "name": "between-the-lines",
   "version": "0.1.0",
   "private": true,
-  "description": "A small hand-drawn archive of unexplained coincidences",
+  "description": "22:18 studio portfolio and a preserved personal story",
   "scripts": {
     "dev": "python3 -m http.server 5173 --bind 127.0.0.1",
     "start": "python3 -m http.server 5173 --bind 127.0.0.1",
-    "check": "node --check script.js"
+    "build": "node scripts/build.mjs",
+    "check": "node --check script.js && node --check studio.js && npm run build && node scripts/check-site.mjs"
   }
 }

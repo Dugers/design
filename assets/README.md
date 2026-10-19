@@ -8,4 +8,4 @@
 
 `paper-grain.png` — процедурная монохромная фактура, seed 41. `star.svg` и встроенные иконки — нарисованные SVG-контуры.
 
-`fonts/comfortaa.otf` — локальный резервный и текстовый шрифт Comfortaa. Лицензия: `fonts/OFL.txt`. Caveat для рукописных заголовков подключён через Google Fonts; без интернета используется Comfortaa.
+`fonts/comfortaa.otf` — локальный резервный и текстовый шрифт Comfortaa. Лицензия: `fonts/OFL.txt`. Caveat для рукописных заголовков подключен через Google Fonts; без интернета используется Comfortaa.

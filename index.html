@@ -2,144 +2,72 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#171416" />
-    <meta name="description" content="Некоторые события становятся частью чего-то большего. Маленькое собрание ещё не объяснённых совпадений." />
-    <meta name="robots" content="noindex, nofollow" />
-    <title>Между строк · некоторые совпадения</title>
-    <link rel="icon" type="image/svg+xml" href="assets/star.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f2f3ee" />
+    <meta name="description" content="22:18 · независимая дизайн-студия. Айдентика, цифровые продукты и печатные издания. Делаем идеи видимыми." />
+    <title>22:18 · независимая дизайн-студия</title>
+    <link rel="icon" href="assets/studio/mark.svg" type="image/svg+xml" />
+    <link rel="preload" href="assets/fonts/red-hat-display.otf" as="font" type="font/otf" crossorigin />
+    <link rel="preload" href="assets/fonts/cantarell-variable.otf" as="font" type="font/otf" crossorigin />
+    <link rel="stylesheet" href="studio.css" />
+    <script src="studio.js" defer></script>
   </head>
   <body>
     <!--
-      THESIS: A quiet hand-drawn mystery journal, revealed through small observations.
-      OWN-WORLD: Warm charcoal paper, muted rose, imperfect pencil icons and a tiny sea voyage.
-      STORY: Read the opening thought, follow the thread, unfold a few unfinished notes.
-      FIDELITY: Avatar-inspired outlined illustration, restrained romance, provisional masked dates.
-      FINISH: Native keyboard-friendly disclosures, responsive composition, reduced-motion support.
+      THESIS: An independent studio's editorial catalogue: the work is the main event.
+      OWN-WORLD: Cool limestone, near-black, vermilion; Red Hat Display numerals and Cantarell text; unboxed asymmetric spreads.
+      STORY: Meet 22:18, browse five self-initiated projects, inspect their craft, assemble a project brief.
+      FIRST VIEWPORT: A slim masthead, oversized full-width 22:18, a split studio statement, the beginning of the work grid.
+      FORM: Editorial minimalism pinned by the user; photographic portfolio spreads. Seed 52482a64, brief takes precedence.
+      FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
     -->
-    <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <defs>
-        <symbol id="i-star" viewBox="0 0 40 40"><path d="m20 3 5.2 10.9 12 2.1-8.5 8.5 1.6 12-10.4-5.7-10.8 5.4 2.3-11.9L3 15.8l12-1.5Z" /></symbol>
-        <symbol id="i-spark" viewBox="0 0 40 40"><path d="M21 3c-1 11-3 14-16 16 12 2 15 5 16 17 2-12 5-15 15-17C26 17 23 14 21 3Z" /></symbol>
-        <symbol id="i-path" viewBox="0 0 40 40"><path d="M10 7c-8 7-7 22 3 24 10 1 16-17 21-14 6 5-2 17-8 18M5 5l8-2 2 8M30 6l1 4m5-5-4 1" /><circle cx="9" cy="31" r="3" /></symbol>
-        <symbol id="i-flame" viewBox="0 0 40 40"><path d="M22 3c4 12-7 12-3 19 3 0 5-4 5-6 9 7 10 19-3 21C7 39 3 28 10 18c-1 6 2 6 3 3C15 15 14 9 22 3Z" /><path d="M18 36c-5-3-3-8 1-12 0 5 7 6 4 12" /></symbol>
-        <symbol id="i-moon" viewBox="0 0 40 40"><path d="M28 5C8 1 1 24 14 33c9 7 20 0 22-6C17 32 12 13 28 5Z" /><path d="m32 6 1 7m-4-4 7 1" /></symbol>
-        <symbol id="i-envelope" viewBox="0 0 40 40"><path d="m4 11 30-2 2 23-31 2Z" /><path d="m5 12 15 12L34 10M5 32l11-13m9 1 10 11" /></symbol>
-        <symbol id="i-lock" viewBox="0 0 24 24"><path d="M7 10V7c0-7 11-7 10 0v3M5 11l14-1 1 11-15 1Z" /><path d="m12 15 .2 3" /></symbol>
-        <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" /></symbol>
-        <symbol id="i-arrow" viewBox="0 0 32 32"><path d="M5 11c1 9 10 13 21 7M18 13l9 5-5 8" /></symbol>
-      </defs>
-    </svg>
-
-    <a class="skip-link" href="#entries">Перейти к записям</a>
-
-    <header class="site-header page-width">
-      <a class="wordmark" href="#" aria-label="Между строк — в начало">
-        <svg class="brand-star" aria-hidden="true"><use href="#i-star" /></svg>
-        <span>между строк</span>
-      </a>
-      <span class="header-note">у всего есть своя история</span>
+    <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+      <symbol id="arrow-up-right" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14" /></symbol>
+      <symbol id="arrow-down" viewBox="0 0 24 24"><path d="M12 3v18M5 14l7 7 7-7" /></symbol>
+      <symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6" /></symbol>
+    </defs></svg>
+    <a class="skip" href="#work">Перейти к работам</a>
+    <header class="masthead wrap">
+      <a class="small-logo" href="#top" aria-label="22:18, в начало">22:18</a>
+      <span class="masthead-description">Независимая<br />дизайн-студия</span>
+      <nav aria-label="Основная навигация"><a href="#work">Работы</a><a href="#studio">Студия</a><a href="#contact" class="nav-contact">Обсудить проект <svg class="icon" aria-hidden="true"><use href="#arrow-up-right" /></svg></a></nav>
     </header>
-
-    <main>
-      <section class="intro page-width" aria-labelledby="opening-line">
-        <div class="intro-copy">
-          <h1 id="opening-line">Некоторые события<br class="desktop-break" /> кажутся случайными<br class="desktop-break" /> лишь до тех пор, пока<br class="desktop-break" /> не становятся частью<br class="desktop-break" /> <span class="marked-words">чего-то большего<svg viewBox="0 0 430 18" preserveAspectRatio="none" aria-hidden="true"><path d="M3 10c98-10 240-8 420-5M9 14c125-7 257-4 376-3" /></svg></span></h1>
-          <p class="intro-description">Ты здесь. Значит, одно совпадение<br />уже случилось.</p>
-          <a class="explore-link" href="#entries">Посмотрим, что дальше <svg aria-hidden="true"><use href="#i-arrow" /></svg></a>
-        </div>
-        <div class="intro-art" aria-hidden="true">
-          <span class="art-note">случайно ли?</span>
-          <img src="assets/night-sea.webp" alt="" width="1536" height="1024" fetchpriority="high" />
-          <span class="art-caption">даже у маленького кораблика<br />есть свой маршрут</span>
+    <main id="top">
+      <section class="hero wrap" aria-labelledby="studio-name">
+        <h1 class="hero-wordmark" id="studio-name" aria-label="22:18">22<span class="colon">:</span>18</h1>
+        <div class="hero-bottom">
+          <p class="hero-statement">Делаем идеи<br /><span>видимыми.</span></p>
+          <div class="hero-description"><p>Находим характер бренда.<br />Придаем ему форму на бумаге,<br class="wide-only" /> на экране и в жизни.</p><a class="text-link" href="#work">Смотреть работы <svg class="icon" aria-hidden="true"><use href="#arrow-down" /></svg></a></div>
+          <span class="hero-index">Айдентика<br />Digital<br />Редакционный дизайн</span>
         </div>
       </section>
-
-      <section class="entries-section page-width" id="entries" aria-labelledby="entries-title">
-        <div class="entries-heading">
-          <div>
-            <h2 id="entries-title">Нити одной истории</h2>
-            <p>Пока не всё понятно. И это нормально.</p>
-          </div>
-          <span class="margin-note">потяни за ниточку<svg aria-hidden="true"><use href="#i-arrow" /></svg></span>
+      <section class="work-section wrap" id="work" aria-labelledby="work-heading">
+        <div class="section-top"><h2 id="work-heading">Избранное<span class="count" aria-hidden="true">(05)</span></h2><div class="filters" role="group" aria-label="Направления работ" hidden><button type="button" data-filter="all" aria-pressed="true">Все</button><button type="button" data-filter="identity" aria-pressed="false">Айдентика</button><button type="button" data-filter="digital" aria-pressed="false">Digital</button><button type="button" data-filter="print" aria-pressed="false">Печать</button></div></div>
+        <p class="sr-only" id="filter-status" role="status"></p>
+        <div class="project-grid">
+          <article class="project project--forme" data-category="identity"><a class="project-art" href="assets/studio/forme.webp" data-project="forme" aria-label="Смотреть проект FORME"><img src="assets/studio/forme.webp" alt="Зеленая упаковка кофе FORME и бумажный стакан на желтом фоне" width="1536" height="1024" fetchpriority="high" /><span class="project-open" aria-hidden="true"><svg class="icon"><use href="#arrow-up-right" /></svg></span></a><div class="project-meta"><h3>FORME</h3><p>Айдентика · Упаковка</p><span>2026</span></div></article>
+          <article class="project project--083" data-category="identity print"><a class="project-art" href="assets/studio/083.webp" data-project="083" aria-label="Смотреть проект 083: город в движении"><img src="assets/studio/083.webp" alt="Графические постеры 083 на бетонной стене: красный, черный и белый" width="1536" height="1024" loading="lazy" /><span class="project-open" aria-hidden="true"><svg class="icon"><use href="#arrow-up-right" /></svg></span></a><div class="project-meta"><h3>083</h3><p>Культурная айдентика · Постеры</p><span>2026</span></div></article>
+          <article class="project project--kontur" data-category="digital"><a class="project-art" href="assets/studio/contour.webp" data-project="kontur" aria-label="Смотреть проект КОНТУР"><img src="assets/studio/contour.webp" alt="Сайт архитектурной практики КОНТУР на экране серебристого ноутбука" width="1536" height="1024" loading="lazy" /><span class="project-open" aria-hidden="true"><svg class="icon"><use href="#arrow-up-right" /></svg></span></a><div class="project-meta"><h3>КОНТУР</h3><p>Арт-дирекшн · Веб-дизайн</p><span>2026</span></div></article>
+          <article class="project project--figures" data-category="print"><a class="project-art" href="story/" aria-label="Смотреть проект «Фигуры в пространстве»"><img src="assets/studio/figures.webp" alt="Художественный постер: две абстрактные фигуры разного роста в синем архитектурном пространстве" width="1536" height="1024" loading="lazy" /><span class="project-open" aria-hidden="true"><svg class="icon"><use href="#arrow-up-right" /></svg></span></a><div class="project-meta"><h3>Фигуры в пространстве</h3><p>Иллюстрация · Авторский постер</p><span>2026</span></div></article>
+          <article class="project project--field" data-category="print"><a class="project-art" href="assets/studio/field.webp" data-project="field" aria-label="Смотреть проект FIELD"><img src="assets/studio/field.webp" alt="Печатный журнал FIELD: крупная типографика и художественные развороты на синем столе" width="1536" height="1024" loading="lazy" /><span class="project-open" aria-hidden="true"><svg class="icon"><use href="#arrow-up-right" /></svg></span></a><div class="project-meta"><h3>FIELD</h3><p>Редакционный дизайн · Арт-дирекшн</p><span>2026</span></div></article>
         </div>
-
-        <div class="story-list">
-          <article class="entry entry--crossing">
-            <span class="thread-point" aria-hidden="true"></span>
-            <details class="entry-disclosure" data-entry="crossing">
-              <summary>
-                <span class="event-icon event-icon--rose"><svg aria-hidden="true"><use href="#i-path" /></svg></span>
-                <span class="entry-main"><span class="entry-title">Точка пересечения</span><span class="entry-teaser">Иногда всё начинается с обычного «привет».</span></span>
-                <span class="entry-date"><time datetime="2026-10-04">04.10.2026</time></span>
-                <span class="entry-action"><svg aria-hidden="true"><use href="#i-chevron" /></svg><span class="sr-only">Показать или скрыть запись</span></span>
-              </summary>
-              <div class="entry-panel"><div class="entry-panel-inner">
-                <div class="revealed-note"><span class="note-label">Найденная заметка</span><p>В тот день ничего не выглядело как начало истории.<br />Впрочем, начала редко предупреждают о себе.</p><p class="handwritten note-afterthought">Любопытно, правда?</p></div>
-              </div></div>
-            </details>
-          </article>
-
-          <article class="entry entry--warmth">
-            <span class="thread-point" aria-hidden="true"></span>
-            <details class="entry-disclosure" data-entry="warmth">
-              <summary>
-                <span class="event-icon event-icon--sand"><svg aria-hidden="true"><use href="#i-flame" /></svg></span>
-                <span class="entry-main"><span class="entry-title">Чуть теплее, чем обычно</span><span class="entry-teaser">У некоторых вечеров своя температура.</span></span>
-                <span class="entry-date"><time datetime="2026-10-23">23.10.2026</time></span>
-                <span class="entry-action"><svg aria-hidden="true"><use href="#i-chevron" /></svg><span class="sr-only">Показать или скрыть запись</span></span>
-              </summary>
-              <div class="entry-panel"><div class="entry-panel-inner">
-                <div class="revealed-note warmth-note"><span class="note-label">Небольшое наблюдение</span><p>Не всякое тепло можно объяснить прогнозом погоды.</p><p>Остальные подробности пока потерялись.<br />Кажется, они найдутся в своё время.</p><p class="handwritten note-afterthought">На всякий случай: вечер лучше оставить свободным.</p></div>
-              </div></div>
-            </details>
-          </article>
-
-          <article class="entry entry--moon">
-            <span class="thread-point" aria-hidden="true"></span>
-            <details class="entry-disclosure" data-entry="lights">
-              <summary>
-                <span class="event-icon event-icon--lavender"><svg aria-hidden="true"><use href="#i-moon" /></svg></span>
-                <span class="entry-main"><span class="entry-title">Когда темнота не страшная</span><span class="entry-teaser">Кажется, кто-то оставил свет.</span></span>
-                <span class="entry-date" aria-label="Неизвестный день октября 2026 года"><span class="masked">x</span>1.10.2026</span>
-                <span class="entry-action"><svg aria-hidden="true"><use href="#i-chevron" /></svg><span class="sr-only">Показать или скрыть запись</span></span>
-              </summary>
-              <div class="entry-panel"><div class="entry-panel-inner">
-                <div class="revealed-note moon-note"><span class="note-label">Записано на полях</span><p>В темноте привычные вещи выглядят немного иначе.<br />Особенно если смотреть на них вдвоём.</p><p class="handwritten note-afterthought">У этой записи пока не хватает деталей.</p></div>
-              </div></div>
-            </details>
-          </article>
-
-          <article class="entry entry--locked">
-            <span class="thread-point" aria-hidden="true"></span>
-            <div class="locked-entry">
-              <span class="event-icon"><svg aria-hidden="true"><use href="#i-envelope" /></svg></span>
-              <span class="entry-main"><span class="entry-title">Письмо без адреса</span><span class="entry-teaser">Некоторые слова ещё в пути.</span></span>
-              <span class="entry-date" aria-label="Неизвестный день ноября 2026 года"><span class="masked">xx</span>.11.2026</span>
-              <span class="entry-action"><svg class="lock-icon" aria-hidden="true"><use href="#i-lock" /></svg><span class="sr-only">Запись пока закрыта</span></span>
-            </div>
-          </article>
-
-          <article class="entry entry--locked entry--unknown">
-            <span class="thread-point" aria-hidden="true"></span>
-            <div class="locked-entry">
-              <span class="event-icon"><svg aria-hidden="true"><use href="#i-spark" /></svg></span>
-              <span class="entry-main"><span class="entry-title">Продолжение следует</span><span class="entry-teaser">Эта часть истории ещё не написана.</span></span>
-              <span class="entry-date" aria-label="Дата пока неизвестна"><span class="masked">xx.xx</span>.2026</span>
-              <span class="entry-action"><svg class="lock-icon" aria-hidden="true"><use href="#i-lock" /></svg><span class="sr-only">Запись пока закрыта</span></span>
-            </div>
-          </article>
-        </div>
-
-        <div class="story-postscript"><svg aria-hidden="true"><use href="#i-star" /></svg><p>Заглядывай иногда.<br /><span>Уже знакомые страницы тоже умеют удивлять.</span></p></div>
+        <p class="work-footnote">Избранные концепции и независимые исследования студии.</p>
+      </section>
+      <section class="studio-section" id="studio" aria-labelledby="studio-heading"><div class="wrap">
+        <div class="studio-intro"><h2 id="studio-heading">Хороший дизайн<br />начинается<br />с внимания.</h2><div class="studio-copy"><p>Независимая студия на пересечении стратегии, графики и цифрового опыта.</p><p>Вникаем в контекст. Задаем вопросы. Убираем лишнее. Ищем решение, в котором идея и форма говорят на одном языке.</p><p>Ведем проект от первой мысли до последнего макета.</p></div></div>
+        <div class="services"><h3>Что мы делаем</h3><div class="service-list">
+          <details><summary><span>Айдентика и брендинг</span><span class="plus" aria-hidden="true"></span></summary><div class="service-body"><p>Визуальный язык, который держит все вместе: от логотипа до упаковки. Собираем систему, с которой удобно работать и легко расти.</p><ul><li>Стратегия и позиционирование</li><li>Визуальная идентичность</li><li>Упаковка и гайдлайны</li></ul></div></details>
+          <details><summary><span>Цифровой дизайн</span><span class="plus" aria-hidden="true"></span></summary><div class="service-body"><p>Сайты и интерфейсы с ясной структурой и собственным характером. Продумываем путь человека и то, как бренд ведет себя на экране.</p><ul><li>Сайты и лендинги</li><li>UX и UI-дизайн</li><li>Интерактивные прототипы</li></ul></div></details>
+          <details><summary><span>Графика и издания</span><span class="plus" aria-hidden="true"></span></summary><div class="service-body"><p>Изображения и печатные вещи, которые хочется рассматривать. Работаем с ритмом, материалом и отношениями между текстом и изображением.</p><ul><li>Постеры и иллюстрации</li><li>Книги и журналы</li><li>Кампании и арт-дирекшн</li></ul></div></details>
+        </div></div>
+        <div class="approach"><h3>От вопроса к форме</h3><p>Погружаемся в задачу <span aria-hidden="true">→</span> Находим идею <span aria-hidden="true">→</span> Собираем систему <span aria-hidden="true">→</span> Доводим до деталей</p></div>
+      </div></section>
+      <section class="contact-section wrap" id="contact" aria-labelledby="contact-heading">
+        <div class="contact-intro"><h2 id="contact-heading">Что у вас<br />на уме<span>?</span></h2><div><p>Новый бренд, сайт или идея,<br />которой пока не хватает формы.</p><a class="contact-action" href="#brief">Начнем с брифа <svg class="icon" aria-hidden="true"><use href="#arrow-down" /></svg></a></div></div>
+        <details class="brief" id="brief"><summary>Коротко о вашем проекте <span class="plus" aria-hidden="true"></span></summary><form id="brief-form"><p class="brief-intro">Несколько вопросов, чтобы сформулировать задачу. Готовый бриф можно сохранить и передать для обсуждения.</p><div class="form-row"><label>Как вас зовут<input name="name" autocomplete="name" required maxlength="100" placeholder="Ваше имя" /></label><label>Как с вами связаться<input name="contact" autocomplete="email" required maxlength="150" placeholder="Почта или Telegram" /></label></div><label>Что хотите сделать<textarea name="task" rows="4" required maxlength="3000" placeholder="О проекте, задаче и желаемых сроках"></textarea></label><div class="form-bottom"><p>Данные остаются в вашем браузере.<br />Форма ничего не отправляет.</p><button class="primary-button" type="submit">Скачать бриф <svg class="icon" aria-hidden="true"><use href="#arrow-down" /></svg></button></div><p class="form-status" role="status" id="brief-status"></p></form></details>
       </section>
     </main>
-
-    <footer class="site-footer page-width"><span>не всё нужно понимать сразу</span><span class="footer-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>некоторые совпадения не случайны</span></footer>
+    <footer class="footer wrap"><a href="#top" class="small-logo" aria-label="22:18, в начало">22:18</a><p>Независимая мысль.<br />Продуманная форма.</p><span>© 22:18, 2026</span><a class="back-top" href="#top">Наверх <svg class="icon" aria-hidden="true"><use href="#arrow-up-right" /></svg></a></footer>
+    <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-bar"><span>22:18 / Проект</span><button class="dialog-close" type="button" aria-label="Закрыть проект" autofocus><svg class="icon" aria-hidden="true"><use href="#close" /></svg></button></div><img class="dialog-image" id="dialog-image" src="assets/studio/forme.webp" alt="" width="1536" height="1024" /><div class="dialog-copy"><div><h2 id="dialog-title"></h2><p id="dialog-category" class="dialog-category"></p><p class="concept-label">Самостоятельный концептуальный проект · 2026</p></div><div><p id="dialog-description"></p><h3>Решение</h3><p id="dialog-solution"></p></div></div></dialog>
   </body>
 </html>

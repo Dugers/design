@@ -1,24 +1,28 @@
-# Prototype finish review
+# 22:18 finish review
 
-Disposition: **provisional pass for source coverage; finish approval withheld pending browser verification.**
+Disposition: **ship**, based on independent source review. Desktop/mobile rendering and native browser flows remain unverified: Chromium cannot launch in this environment and no connected browser is available. This is not rendered-design approval.
 
-**THESIS** — Supported. Russian copy, quiet opening, restrained mystery, and five compact timeline entries match the brief. Exact opening wording is present.
+## Direction contract
 
-**OWN-WORLD** — Supported by inspected assets and source. Warm charcoal, muted pink, cream, irregular SVG contours, and paper texture form a coherent direction. The generated boat illustration carries the avatar’s brown outlines and pink star. Its compositing within the page remains unverified.
+- **THESIS:** A work-led independent design studio catalogue, with five substantive project images.
+- **OWN-WORLD:** Limestone, near-black, vermilion; self-hosted Red Hat Display numerals and Cantarell text; an unboxed asymmetric grid.
+- **STORY:** Browse and filter concepts, inspect four project descriptions, expand services and prepare a local brief. Only the figurative artwork enters the separate story.
+- **FIDELITY:** Editorial minimalism requested by the user; honest concept labels; no invented clients or commercial achievements. The illustrated figures carry broad silhouette references without copied faces.
+- **FINISH:** Relative resources support both directory routes. Focus styling, reduced motion, native dialogs/disclosures and responsive rules exist in source. Their rendered behavior remains unverified.
 
-**STORY** — Supported. Clear opening → “Посмотрим, что дальше” → event rows → inline notes. Three native disclosures and two visibly closed entries. Copy avoids explicit dinner, Halloween, or relationship-question spoilers.
-
-**FIDELITY** — Requirements covered. Hint icons, visible and masked dates, Russian content, static HTML/CSS/JS, and expandable notes are present. No approved composition exists beyond the avatar style reference.
-
-**FINISH** — The defining handwritten typography depends on Google Fonts. Comfortaa is bundled, but changes the handwritten identity and text metrics when Caveat cannot load. Self-hosting a Cyrillic-capable handwritten font remains a follow-up; downloading it was unavailable in this environment.
+## Final verdict
 
 | Check | Verdict |
 |---|---|
-| Brief coverage and spoiler restraint | Pass from source |
-| Avatar palette and illustrated style | Supported by asset inspection |
-| Native disclosure structure and reduced motion | Present in source |
-| Locally reliable handwritten typography | Needs fix |
-| Responsive layout, overflow, contrast in rendering | Unverified |
-| Browser keyboard, disclosure, anchor interactions | Unverified |
+| Studio structure, imagery, privacy and single illustrated entrance | Pass from source and asset inspection |
+| Malformed punctuation found by reviewer | Resolved |
+| GitHub Pages build and local resource resolution under /design/ | Pass |
+| Original story CSS and JavaScript | Byte-identical to original snapshot |
+| Authorized story dates and masked future chapters | Pass from source |
+| Desktop/mobile rendering, keyboard and nested native disclosure behavior | Unverified |
 
-The detector returned `[]`. JavaScript syntax, resource paths, SVG references, the exact opening sentence and disclosure coordination logic were checked successfully. These checks do not establish visual or browser interaction quality. Server binding and browser launch failed with `EPERM`; no screenshots were available for review.
+The story content was extended after relocation at the user's explicit request: online messages 25.09, first meeting 04.10, argument 08.10, reconciliation 09.10, first kiss and declaration 10.10. Private dispute specifics are omitted. The warmth chapter is retained; future masks are xx.11.2026, 0x.11.2026, xx.11.2026 and xx.xx.xxxx. The unnamed row has no SVG icon. The map-legend finale has a second native disclosure, no explicit proposal, forced response or predetermined physical scenario.
+
+`npm run check` passes syntax, build, 24 local resource references, the single story entrance, five portfolio projects, retained meeting date and original disclosure coordination logic. `git diff --check` passes. These source checks do not substitute for browser rendering. No changes have been pushed or published.
+
+The detector was run once; its remaining findings concerned the old root design documentation. The original documentation is preserved under story/, and the studio system is recorded separately at the root.

@@ -1,237 +1,277 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-19T19:05:23.893319+00:00",
-  "title": "Design System: Между строк",
+  "generatedAt": "2026-10-19T19:46:59.906698+00:00",
+  "title": "Design System: 22:18",
   "extensions": {
     "colorMeta": {
-      "page": {
+      "surface": {
         "role": "neutral",
-        "displayName": "Warm charcoal",
+        "displayName": "Cool Limestone",
         "tonalRamp": [
-          "oklch(15% 0.0101 355.82)",
-          "oklch(26% 0.0101 355.82)",
-          "oklch(38% 0.0101 355.82)",
-          "oklch(49% 0.0101 355.82)",
-          "oklch(61% 0.0101 355.82)",
-          "oklch(72% 0.0101 355.82)",
-          "oklch(84% 0.0101 355.82)",
-          "oklch(95% 0.0101 355.82)"
+          "oklch(15% 0.0067 115.71)",
+          "oklch(26% 0.0067 115.71)",
+          "oklch(38% 0.0067 115.71)",
+          "oklch(49% 0.0067 115.71)",
+          "oklch(61% 0.0067 115.71)",
+          "oklch(72% 0.0067 115.71)",
+          "oklch(84% 0.0067 115.71)",
+          "oklch(95% 0.0067 115.71)"
         ]
       },
-      "paper": {
+      "ink": {
         "role": "neutral",
-        "displayName": "Cream",
+        "displayName": "Near-black Ink",
         "tonalRamp": [
-          "oklch(15% 0.0172 50.42)",
-          "oklch(26% 0.0172 50.42)",
-          "oklch(38% 0.0172 50.42)",
-          "oklch(49% 0.0172 50.42)",
-          "oklch(61% 0.0172 50.42)",
-          "oklch(72% 0.0172 50.42)",
-          "oklch(84% 0.0172 50.42)",
-          "oklch(95% 0.0172 50.42)"
+          "oklch(15% 0.0086 137.82)",
+          "oklch(26% 0.0086 137.82)",
+          "oklch(38% 0.0086 137.82)",
+          "oklch(49% 0.0086 137.82)",
+          "oklch(61% 0.0086 137.82)",
+          "oklch(72% 0.0086 137.82)",
+          "oklch(84% 0.0086 137.82)",
+          "oklch(95% 0.0086 137.82)"
         ]
       },
-      "muted": {
+      "secondary": {
         "role": "neutral",
-        "displayName": "Softer ink",
+        "displayName": "Quiet Olive-grey",
         "tonalRamp": [
-          "oklch(15% 0.0174 17.55)",
-          "oklch(26% 0.0174 17.55)",
-          "oklch(38% 0.0174 17.55)",
-          "oklch(49% 0.0174 17.55)",
-          "oklch(61% 0.0174 17.55)",
-          "oklch(72% 0.0174 17.55)",
-          "oklch(84% 0.0174 17.55)",
-          "oklch(95% 0.0174 17.55)"
-        ]
-      },
-      "dim": {
-        "role": "neutral",
-        "displayName": "Faded ink",
-        "tonalRamp": [
-          "oklch(15% 0.0195 4.80)",
-          "oklch(26% 0.0195 4.80)",
-          "oklch(38% 0.0195 4.80)",
-          "oklch(49% 0.0195 4.80)",
-          "oklch(61% 0.0195 4.80)",
-          "oklch(72% 0.0195 4.80)",
-          "oklch(84% 0.0195 4.80)",
-          "oklch(95% 0.0195 4.80)"
-        ]
-      },
-      "pink": {
-        "role": "primary",
-        "displayName": "Dusty rose",
-        "tonalRamp": [
-          "oklch(15% 0.0679 0.84)",
-          "oklch(26% 0.0679 0.84)",
-          "oklch(38% 0.0679 0.84)",
-          "oklch(49% 0.0679 0.84)",
-          "oklch(61% 0.0679 0.84)",
-          "oklch(72% 0.0679 0.84)",
-          "oklch(84% 0.0679 0.84)",
-          "oklch(95% 0.0679 0.84)"
+          "oklch(15% 0.0148 126.59)",
+          "oklch(26% 0.0148 126.59)",
+          "oklch(38% 0.0148 126.59)",
+          "oklch(49% 0.0148 126.59)",
+          "oklch(61% 0.0148 126.59)",
+          "oklch(72% 0.0148 126.59)",
+          "oklch(84% 0.0148 126.59)",
+          "oklch(95% 0.0148 126.59)"
         ]
       },
       "line": {
         "role": "neutral",
-        "displayName": "Brown pencil",
+        "displayName": "Pale Stone Rule",
         "tonalRamp": [
-          "oklch(15% 0.0243 353.86)",
-          "oklch(26% 0.0243 353.86)",
-          "oklch(38% 0.0243 353.86)",
-          "oklch(49% 0.0243 353.86)",
-          "oklch(61% 0.0243 353.86)",
-          "oklch(72% 0.0243 353.86)",
-          "oklch(84% 0.0243 353.86)",
-          "oklch(95% 0.0243 353.86)"
+          "oklch(15% 0.0127 121.74)",
+          "oklch(26% 0.0127 121.74)",
+          "oklch(38% 0.0127 121.74)",
+          "oklch(49% 0.0127 121.74)",
+          "oklch(61% 0.0127 121.74)",
+          "oklch(72% 0.0127 121.74)",
+          "oklch(84% 0.0127 121.74)",
+          "oklch(95% 0.0127 121.74)"
         ]
       },
-      "sand": {
+      "accent": {
         "role": "primary",
-        "displayName": "Warm sand",
+        "displayName": "Vermilion",
         "tonalRamp": [
-          "oklch(15% 0.0591 70.22)",
-          "oklch(26% 0.0591 70.22)",
-          "oklch(38% 0.0591 70.22)",
-          "oklch(49% 0.0591 70.22)",
-          "oklch(61% 0.0591 70.22)",
-          "oklch(72% 0.0591 70.22)",
-          "oklch(84% 0.0591 70.22)",
-          "oklch(95% 0.0591 70.22)"
+          "oklch(15% 0.1782 31.83)",
+          "oklch(26% 0.1782 31.83)",
+          "oklch(38% 0.1782 31.83)",
+          "oklch(49% 0.1782 31.83)",
+          "oklch(61% 0.1782 31.83)",
+          "oklch(72% 0.1782 31.83)",
+          "oklch(84% 0.1782 31.83)",
+          "oklch(95% 0.1782 31.83)"
         ]
       },
-      "note": {
+      "project-placeholder": {
         "role": "neutral",
-        "displayName": "Inset paper",
+        "displayName": "Unloaded Artwork",
         "tonalRamp": [
-          "oklch(15% 0.0154 349.66)",
-          "oklch(26% 0.0154 349.66)",
-          "oklch(38% 0.0154 349.66)",
-          "oklch(49% 0.0154 349.66)",
-          "oklch(61% 0.0154 349.66)",
-          "oklch(72% 0.0154 349.66)",
-          "oklch(84% 0.0154 349.66)",
-          "oklch(95% 0.0154 349.66)"
-        ]
-      },
-      "note-text": {
-        "role": "neutral",
-        "displayName": "Soft cream",
-        "tonalRamp": [
-          "oklch(15% 0.0196 5.40)",
-          "oklch(26% 0.0196 5.40)",
-          "oklch(38% 0.0196 5.40)",
-          "oklch(49% 0.0196 5.40)",
-          "oklch(61% 0.0196 5.40)",
-          "oklch(72% 0.0196 5.40)",
-          "oklch(84% 0.0196 5.40)",
-          "oklch(95% 0.0196 5.40)"
+          "oklch(15% 0.0123 116.83)",
+          "oklch(26% 0.0123 116.83)",
+          "oklch(38% 0.0123 116.83)",
+          "oklch(49% 0.0123 116.83)",
+          "oklch(61% 0.0123 116.83)",
+          "oklch(72% 0.0123 116.83)",
+          "oklch(84% 0.0123 116.83)",
+          "oklch(95% 0.0123 116.83)"
         ]
       }
     },
     "typographyMeta": {
       "display": {
-        "displayName": "Handwritten opening",
-        "purpose": "Opening thought; remote Caveat with bundled Comfortaa fallback."
+        "displayName": "Numerical Identity",
+        "purpose": "Large studio wordmark only."
+      },
+      "headline": {
+        "displayName": "Editorial Headline",
+        "purpose": "Studio section introduction."
+      },
+      "statement": {
+        "displayName": "Opening Statement",
+        "purpose": "Concise studio proposition."
+      },
+      "title": {
+        "displayName": "Project Title",
+        "purpose": "Project name below artwork."
       },
       "body": {
-        "displayName": "Rounded reading text",
-        "purpose": "Supporting prose and dates; bundled Comfortaa."
+        "displayName": "Reading Text",
+        "purpose": "Descriptive copy and fields."
+      },
+      "label": {
+        "displayName": "Interface Label",
+        "purpose": "Navigation, filters and supporting metadata."
       }
     },
     "shadows": [],
     "motion": [
       {
-        "name": "link-and-title",
-        "value": "200ms ease",
-        "purpose": "Exploration arrow, row wash and title color."
+        "name": "settle",
+        "value": "cubic-bezier(.22,1,.36,1)",
+        "purpose": "Shared easing for small introductory movements and project interactions."
       },
       {
-        "name": "chevron",
-        "value": "240ms ease",
-        "purpose": "Open-state rotation and ink color."
+        "name": "wordmark-reveal",
+        "value": "1.1s; translateY(12px) → 0; clip-path inset(0 0 12% 0) → inset(0)",
+        "purpose": "One-time wordmark entrance when reduced motion is not requested."
       },
       {
-        "name": "disclosure-height",
-        "value": "300ms ease",
-        "purpose": "Progressive enhancement where interpolate-size is supported."
+        "name": "hero-settle",
+        "value": "1s; translateY(12px) → 0",
+        "purpose": "Opening statement entrance; dialog reuses the movement at .35s."
+      },
+      {
+        "name": "project-image",
+        "value": ".8s; scale(1) → scale(1.035)",
+        "purpose": "Artwork hover on hover-capable devices."
+      },
+      {
+        "name": "project-arrow",
+        "value": ".4s transform; .2s background and color",
+        "purpose": "Rotate action by 45 degrees with tonal reversal."
+      },
+      {
+        "name": "disclosure",
+        "value": ".25s transform",
+        "purpose": "Fold the plus vertical stroke to zero degrees."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation:none; transition:none; scroll-behavior:auto",
+        "purpose": "Disable nonessential movement for the user preference."
       }
     ],
     "breakpoints": [
       {
-        "name": "compact-desktop",
-        "value": "900px"
+        "name": "compact",
+        "value": "380px"
       },
       {
         "name": "mobile",
-        "value": "640px"
+        "value": "700px"
+      },
+      {
+        "name": "tablet",
+        "value": "1050px"
       },
       {
         "name": "wide",
-        "value": "1400px"
+        "value": "1680px"
       }
     ]
   },
   "components": [
     {
-      "name": "Star wordmark",
-      "kind": "nav",
-      "description": "Header link back to the opening.",
-      "html": "<a class=\"ds-wordmark\" href=\"#\"><svg viewBox=\"0 0 40 40\" aria-hidden=\"true\"><path d=\"m20 3 5.2 10.9 12 2.1-8.5 8.5 1.6 12-10.4-5.7-10.8 5.4 2.3-11.9L3 15.8l12-1.5Z\"/></svg><span>между строк</span></a>",
-      "css": ".ds-wordmark{display:inline-flex;align-items:center;gap:13px;color:var(--paper,#e9dcd5);text-decoration:none;font-size:28px;line-height:1;font-family:var(--hand,\"Caveat\",\"Comfortaa\",cursive);}.ds-wordmark svg{width:25px;height:25px;color:var(--pink,#d7a0af);fill:#a57282;stroke:#e5b1be;stroke-width:1.6;transform:rotate(-13deg)}.ds-wordmark:focus-visible{outline:2px dashed var(--pink,#d7a0af);outline-offset:7px;border-radius:4px}"
-    },
-    {
-      "name": "Exploration link",
+      "name": "Primary Button",
       "kind": "button",
-      "description": "Text anchor leading to the archive; no filled button surface.",
-      "html": "<a class=\"ds-explore\" href=\"#entries\">Посмотрим, что дальше <svg viewBox=\"0 0 32 32\" aria-hidden=\"true\"><path d=\"M5 11c1 9 10 13 21 7M18 13l9 5-5 8\"/></svg></a>",
-      "css": ".ds-explore{display:inline-flex;align-items:center;gap:13px;padding:6px 0;color:var(--paper,#e9dcd5);text-decoration:none;font-size:12px;font-family:var(--font,\"Comfortaa\",\"Trebuchet MS\",sans-serif);}.ds-explore svg{width:32px;height:32px;color:var(--pink,#d7a0af);transition:transform 200ms ease;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}.ds-explore:hover svg{transform:translate(4px,2px) rotate(8deg)}.ds-explore:focus-visible{outline:2px dashed var(--pink,#d7a0af);outline-offset:7px;border-radius:4px}@media(prefers-reduced-motion:reduce){.ds-explore svg{transition:none}}"
+      "refersTo": "button-primary",
+      "description": "Square download action with a restrained accent hover.",
+      "html": "<button class=\"ds-primary\" type=\"button\">Скачать бриф <svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></button>",
+      "css": ".ds-primary{font-family:Cantarell,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:35px;padding:16px 22px;border:0;border-radius:0;background:var(--ink,#20231f);color:var(--surface,#f2f3ee);font-size:17px;line-height:1.6;cursor:pointer;transition:background .2s}.ds-primary:hover{background:var(--accent,#bc321c)}.ds-primary:focus-visible{outline:2px solid var(--accent,#bc321c);outline-offset:6px;}.ds-primary:disabled{opacity:.5;cursor:default}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
     },
     {
-      "name": "Chapter disclosure",
-      "kind": "custom",
-      "refersTo": "entry-disclosure",
-      "description": "Native disclosure; full-page JavaScript limits the archive to one open entry.",
-      "html": "<details class=\"ds-entry\"><summary><span><span class=\"ds-title\">Точка пересечения</span><span class=\"ds-teaser\">Иногда всё начинается с обычного «привет».</span></span><span class=\"ds-date\">04.10.2026</span><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"m6 9 6 6 6-6\"/></svg></summary><p>В тот день ничего не выглядело как начало истории.</p></details>",
-      "css": ".ds-entry{color:var(--paper,#e9dcd5);border-bottom:1px solid var(--line,#4c3c42);font-family:var(--font,\"Comfortaa\",\"Trebuchet MS\",sans-serif);}.ds-entry summary{display:grid;grid-template-columns:1fr auto 24px;gap:23px;align-items:center;min-height:110px;padding:21px 12px 21px 10px;list-style:none;cursor:pointer;border-radius:5px;transition:background-color 200ms ease}.ds-entry summary::-webkit-details-marker{display:none}.ds-entry summary:hover{background:#b77c8e09}.ds-title{display:block;font-size:28px;font-weight:500;line-height:1.2;transition:color 200ms ease;font-family:var(--hand,\"Caveat\",\"Comfortaa\",cursive);}.ds-teaser{display:block;margin-top:7px;color:var(--muted,#b8a9a9);font-size:11px;line-height:1.7}.ds-date{color:var(--muted,#b8a9a9);font-size:11px;font-variant-numeric:tabular-nums;white-space:nowrap}.ds-entry svg{width:19px;height:19px;color:var(--muted,#b8a9a9);transition:transform 240ms ease,color 240ms ease;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}.ds-entry[open] svg{transform:rotate(180deg);color:var(--pink,#d7a0af)}.ds-entry[open] .ds-title,.ds-entry summary:hover .ds-title{color:var(--pink,#d7a0af)}.ds-entry summary:focus-visible{outline:2px dashed var(--pink,#d7a0af);outline-offset:7px;border-radius:4px}.ds-entry p{padding:0 29px 20px;font-size:12px;line-height:1.9;color:#d0bfc2}@media(prefers-reduced-motion:reduce){.ds-entry summary,.ds-title,.ds-entry svg{transition:none}}"
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Persistent label and transparent underlined field.",
+      "html": "<label class=\"ds-label\">Как вас зовут<input class=\"ds-field\" placeholder=\"Ваше имя\" autocomplete=\"name\" /></label>",
+      "css": ".ds-label{font-family:Cantarell,sans-serif;display:block;color:var(--ink,#20231f);font-size:14px;line-height:1.6}.ds-field{font-family:Cantarell,sans-serif;display:block;box-sizing:border-box;width:100%;font-size:17px;line-height:1.6;color:var(--ink,#20231f);background:transparent;border:0;border-bottom:1px solid var(--secondary,#62665d);border-radius:0;padding:12px 0}.ds-field::placeholder{color:var(--secondary,#62665d);opacity:1}.ds-field:focus-visible{outline:2px solid var(--accent,#bc321c);outline-offset:6px;}"
     },
     {
-      "name": "Revealed note",
+      "name": "Studio Navigation",
+      "kind": "nav",
+      "description": "Compact direct links with an open arrow contact action.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Основная навигация\"><a href=\"#work\">Работы</a><a href=\"#studio\">Студия</a><a href=\"#contact\">Обсудить проект <svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></a></nav>",
+      "css": ".ds-nav{font-family:Cantarell,sans-serif;display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:clamp(25px,4vw,65px);font-size:14px;line-height:1.6}.ds-nav a{display:inline-flex;align-items:center;gap:12px;padding-block:12px;color:var(--ink,#20231f);text-decoration:none}.ds-nav a:hover{color:var(--accent,#bc321c)}.ds-nav a:focus-visible{outline:2px solid var(--accent,#bc321c);outline-offset:6px;}@media(max-width:700px){.ds-nav{gap:23px;font-size:13px}.ds-nav svg{display:none}}"
+    },
+    {
+      "name": "Category Filter",
+      "kind": "chip",
+      "refersTo": "filter",
+      "description": "Text-only filter; pressed state retains its bottom rule.",
+      "html": "<div class=\"ds-filters\" role=\"group\" aria-label=\"Направления работ\"><button type=\"button\" aria-pressed=\"true\">Все</button><button type=\"button\" aria-pressed=\"false\">Айдентика</button></div>",
+      "css": ".ds-filters{display:flex;gap:25px;flex-wrap:wrap}.ds-filters button{font-family:Cantarell,sans-serif;font-size:14px;line-height:1.6;padding:9px 0;background:none;border:0;border-bottom:1px solid transparent;border-radius:0;color:var(--secondary,#62665d);cursor:pointer}.ds-filters button:hover{color:var(--ink,#20231f)}.ds-filters button[aria-pressed=true]{color:var(--ink,#20231f);border-color:var(--ink,#20231f)}.ds-filters button:focus-visible{outline:2px solid var(--accent,#bc321c);outline-offset:6px;}"
+    },
+    {
+      "name": "Project Metadata",
       "kind": "card",
-      "refersTo": "revealed-note",
-      "description": "Inset note with a dashed pencil edge and handwritten afterthought.",
-      "html": "<div class=\"ds-note\"><span class=\"ds-note-label\">Найденная заметка</span><p>Впрочем, начала редко предупреждают о себе.</p><p class=\"ds-afterthought\">Любопытно, правда?</p></div>",
-      "css": ".ds-note{position:relative;padding:23px 29px 20px;background:#2b2226;border-radius:2px 8px 4px 7px;font-family:var(--font,\"Comfortaa\",\"Trebuchet MS\",sans-serif);}.ds-note::before{content:\"\";position:absolute;left:26px;right:23px;top:0;border-top:1px dashed #755664;transform:rotate(-.5deg)}.ds-note-label{font-size:10px;color:var(--pink,#d7a0af)}.ds-note p{font-size:12px;line-height:1.9;margin:10px 0 0;color:#d0bfc2}.ds-note .ds-afterthought{font-size:23px;line-height:1.3;color:var(--pink,#d7a0af);margin-top:17px;transform:rotate(-1deg);font-family:var(--hand,\"Caveat\",\"Comfortaa\",cursive);}"
+      "description": "Unboxed metadata below artwork; this preview intentionally omits the image.",
+      "html": "<div class=\"ds-meta\"><h3>FORME</h3><p>Айдентика · Упаковка</p><span>2026</span></div>",
+      "css": ".ds-meta{font-family:Cantarell,sans-serif;display:grid;grid-template-columns:1fr auto;column-gap:15px;padding-top:17px;color:var(--ink,#20231f)}.ds-meta h3{margin:0;font-size:22px;font-weight:400;line-height:1.1;letter-spacing:-.015em}.ds-meta p{grid-column:1;font-size:14px;line-height:1.6;color:var(--secondary,#62665d);margin:5px 0 0}.ds-meta>span{grid-column:2;grid-row:1;font-size:13px;line-height:1.6}"
     },
     {
-      "name": "Locked chapter and masked date",
+      "name": "Project Open Action",
+      "kind": "button",
+      "refersTo": "project-open",
+      "description": "Circular image-overlay action; hover reverses tones and rotates the arrow.",
+      "html": "<a class=\"ds-open\" href=\"#project\" aria-label=\"Смотреть проект\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></a>",
+      "css": ".ds-open{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--surface,#f2f3ee);color:var(--ink,#20231f);transition:background .2s,color .2s,transform .4s var(--ease,cubic-bezier(.22,1,.36,1))}.ds-open:hover,.ds-open:focus-visible{color:var(--surface,#f2f3ee);background:var(--ink,#20231f);transform:rotate(45deg)}.ds-open:focus-visible{outline:2px solid var(--accent,#bc321c);outline-offset:6px;}@media(prefers-reduced-motion:reduce){.ds-open{transition:none}}"
+    },
+    {
+      "name": "Expandable Service Row",
       "kind": "custom",
-      "description": "Passive future entry, with an explicit accessible unknown-date label.",
-      "html": "<div class=\"ds-locked\"><span><span class=\"ds-locked-title\">Письмо без адреса</span><span class=\"ds-locked-teaser\">Некоторые слова ещё в пути.</span></span><span class=\"ds-masked-date\" aria-label=\"Неизвестный день ноября 2026 года\"><span>xx</span>.11.2026</span><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M7 10V7c0-7 11-7 10 0v3M5 11l14-1 1 11-15 1Z\"/><path d=\"m12 15 .2 3\"/></svg></div>",
-      "css": ".ds-locked{display:grid;grid-template-columns:1fr auto 24px;gap:23px;align-items:center;min-height:110px;padding:21px 12px 21px 10px;border-bottom:1px solid var(--line,#4c3c42);font-family:var(--font,\"Comfortaa\",\"Trebuchet MS\",sans-serif);}.ds-locked-title{display:block;color:#aa999f;font-size:28px;font-weight:500;line-height:1.2;font-family:var(--hand,\"Caveat\",\"Comfortaa\",cursive);}.ds-locked-teaser{display:block;margin-top:7px;color:#a999a0;font-size:11px;line-height:1.7}.ds-masked-date{color:#a5949b;font-size:11px;white-space:nowrap;font-variant-numeric:tabular-nums}.ds-masked-date span{color:var(--pink,#d7a0af);font-size:19px;line-height:1;padding-inline:1px;font-family:var(--hand,\"Caveat\",\"Comfortaa\",cursive);}.ds-locked svg{width:16px;height:16px;color:#a08c96;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}"
+      "description": "Native disclosure with a folding plus and a quiet ruled boundary.",
+      "html": "<details class=\"ds-service\"><summary>Цифровой дизайн<span class=\"ds-plus\" aria-hidden=\"true\"></span></summary><p>Сайты и интерфейсы с ясной структурой и собственным характером.</p></details>",
+      "css": ".ds-service{font-family:Cantarell,sans-serif;border-top:1px solid var(--line,#c9ccc3);color:var(--ink,#20231f)}.ds-service summary{display:flex;align-items:center;justify-content:space-between;gap:25px;list-style:none;cursor:pointer;padding:23px 0;font-size:clamp(24px,2.6vw,38px);line-height:1.2;letter-spacing:-.02em}.ds-service summary::-webkit-details-marker{display:none}.ds-plus{position:relative;width:19px;height:19px;flex-shrink:0}.ds-plus:before,.ds-plus:after{content:\"\";position:absolute;left:0;top:9px;width:19px;height:1px;background:currentColor;transition:transform .25s var(--ease,cubic-bezier(.22,1,.36,1))}.ds-plus:after{transform:rotate(90deg)}.ds-service[open] .ds-plus:after{transform:rotate(0)}.ds-service p{max-width:64ch;margin:0;padding:0 40px 30px 0;font-size:17px;line-height:1.6;color:var(--secondary,#62665d)}.ds-service summary:focus-visible{outline:2px solid var(--accent,#bc321c);outline-offset:6px;}@media(prefers-reduced-motion:reduce){.ds-plus:before,.ds-plus:after{transition:none}}"
+    },
+    {
+      "name": "Numerical Wordmark",
+      "kind": "custom",
+      "description": "Large regular numerals and a vermilion colon define the identity.",
+      "html": "<div class=\"ds-wordmark\" aria-label=\"22:18\">22<span>:</span>18</div>",
+      "css": ".ds-wordmark{font-family:Red Hat Display,sans-serif;font-size:clamp(120px,32.2vw,525px);font-weight:400;line-height:.91;letter-spacing:-.04em;white-space:nowrap;color:var(--ink,#20231f)}.ds-wordmark span{color:var(--accent,#bc321c)}"
     }
   ],
   "narrative": {
-    "northStar": "A quiet hand-drawn mystery journal",
-    "overview": "Warm charcoal paper, dusty rose marks, imperfect pencil outlines and a tiny sea voyage make a personal archive feel intimate and curious. The avatar reference supplies the palette and handmade character. Romance stays restrained, with room for lightly humorous observations.\n\nThis is a record of the first implemented prototype, not a user-approved final identity. The title, copy, chapter treatments and descriptive language remain provisional. Values were extracted from source; rendered desktop/mobile screenshots and computed styles could not be verified because the local server/browser failed with EPERM.",
+    "northStar": "The Editorial Catalogue",
+    "overview": "An editorial catalogue for an independent design studio. Cool limestone, near-black typography and a rare vermilion signal frame the work. Oversized numerical typography supplies the identity; the rest of the interface is clear, quiet and precise.\n\nProject imagery carries its own color and material character. Unboxed compositions, thin rules and changing column widths create rhythm without decorative interface chrome. This system governs the studio homepage; the preserved story has its own authority in story/DESIGN.md.",
     "keyCharacteristics": [
-      "Dark paper with a subtle grain.",
-      "Handwritten headings beside quiet rounded body text.",
-      "Open rows threaded together by an imperfect dashed line.",
-      "Small discoveries revealed in place."
+      "Expressive numerical wordmark; restrained supporting typography.",
+      "Unboxed project imagery and asymmetric desktop spreads.",
+      "Flat surfaces, thin rules and clear interactive states.",
+      "Responsive reflow and reduced-motion support."
     ],
-    "rules": [],
+    "rules": [
+      {
+        "name": "The Work First Rule",
+        "body": "Keep interface surfaces quiet enough for project imagery to carry the visual variety.",
+        "section": "colors"
+      },
+      {
+        "name": "The Identity Scale Rule",
+        "body": "Reserve the largest Red Hat Display numerals for the studio identity; use Cantarell for readable content and controls.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Surface Rule",
+        "body": "Use spacing, contrast and thin rules for separation. The implemented studio interface has no box shadows.",
+        "section": "elevation"
+      }
+    ],
     "dos": [
-      "Do preserve the dark, minimal, hand-drawn character established by the avatar.",
-      "Do keep text, focus and disclosure affordances legible against the textured canvas.",
-      "Do treat chapter-specific colors and content as provisional, with room for later identities."
+      "Do use the existing color variables and locally hosted font families.",
+      "Do give project imagery generous space and place metadata below it.",
+      "Do preserve visible keyboard focus and the selected filter underline.",
+      "Do collapse the project grid to a single column on small screens.",
+      "Do describe portfolio concepts honestly and keep the story’s visual system separate."
     ],
     "donts": [
-      "Don't replace the quiet outline world with realistic, glossy or three-dimensional imagery.",
-      "Don't turn the passive locked rows into misleading controls.",
-      "Don't use sentimental clichés or visual motifs that reveal the story's planned surprises."
+      "Don't add rounded card shells or ambient shadows to the studio grid.",
+      "Don't turn the vermilion accent into a large decorative background.",
+      "Don't substitute the story’s handwritten fonts or dark palette into studio pages.",
+      "Don't introduce motion that ignores the reduced-motion preference."
     ]
   }
 }
