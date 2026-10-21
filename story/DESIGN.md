@@ -1,14 +1,14 @@
 ---
 name: Между строк
-description: A quiet hand-drawn mystery journal on warm charcoal paper.
+description: A quiet hand-drawn mystery journal with slow firelight and drifting embers.
 colors:
-  page: "#171416"
-  paper: "#fff2e7"
-  muted: "#d0c2c5"
-  dim: "#baabb2"
-  pink: "#edb3c3"
-  line: "#4c3c42"
-  sand: "#d7b895"
+  page: "#1b1411"
+  paper: "#fff0e4"
+  muted: "#d6b9aa"
+  dim: "#b99d90"
+  pink: "#f0a06c"
+  line: "#51372f"
+  sand: "#f1ae72"
   note: "#2b2226"
   note-text: "#e9dadd"
 typography:
@@ -56,9 +56,9 @@ components:
 
 ## Overview
 
-**Creative North Star: "A quiet hand-drawn mystery journal"**
+**Creative North Star: "A quiet hand-drawn mystery journal in firelight"**
 
-Warm charcoal paper, dusty rose marks, imperfect pencil outlines and a tiny sea voyage make a personal archive feel intimate and curious. The avatar reference supplies the palette and handmade character. Romance stays restrained, with room for lightly humorous observations.
+Warm charcoal paper, ember-orange marks, imperfect pencil outlines and a flickering, layered flame make a personal archive feel intimate and curious. The avatar reference supplies the handmade character; the page palette now carries the firelight of the October 22 chapter. Romance stays restrained, with room for lightly humorous observations.
 
 This is a record of the first implemented prototype, not a user-approved final identity. The title, copy, chapter treatments and descriptive language remain provisional. Values were extracted from source; rendered desktop/mobile screenshots and computed styles could not be verified because the local server/browser failed with EPERM.
 
@@ -72,11 +72,11 @@ This is a record of the first implemented prototype, not a user-approved final i
 
 ### Primary
 
-Dusty rose (`pink`) marks the star, opening emphasis, active chapter titles and handwritten afterthoughts. Warm sand (`sand`) gives one chapter a gentle variation.
+Ember orange (`pink`) marks the star, opening emphasis, active chapter titles and handwritten afterthoughts. Golden amber (`sand`) gives the warmth chapter its stronger accent.
 
 ### Neutral
 
-Warm charcoal (`page`) is the canvas; cream (`paper`) carries prominent text. Softer ink (`muted`) carries supporting text, faded ink (`dim`) the footer, and brown pencil (`line`) the separators. The note surface (`note`) sits slightly above the canvas with softer cream (`note-text`) for prose. Warm and lavender note variants are local chapter treatments rather than a complete semantic palette.
+Warm charcoal (`page`) is the canvas; cream (`paper`) carries prominent text. Softer ink (`muted`) carries supporting text, faded ink (`dim`) the footer, and burnt umber (`line`) the separators. The note surface (`note`) sits slightly above the canvas with softer cream (`note-text`) for prose. Warm and dusk note variants use burnt sienna and muted copper within the wider ember palette.
 
 ## Typography
 
@@ -92,11 +92,11 @@ At 900px, side space becomes 32px and row columns tighten. At 640px, side space 
 
 ## Elevation & Depth
 
-There are no box shadows. Slightly lighter note surfaces, paper grain (4% opacity), restrained dashed marks and small rotations supply depth. The grain is decorative and never intercepts input. The canvas was deepened and all text roles brightened after feedback about text blending into the background.
+There are no box shadows. Slightly lighter note surfaces, paper grain (4% opacity), restrained dashed marks and small rotations supply depth. An imperfect outlined flame with layered, independently flickering tongues, soft ambient glow and sparse drifting embers supply the warm focal light; the grain and motion layers are decorative and never intercept input.
 
 ## Shapes
 
-Outline icons have rounded caps and joins with slightly irregular paths. Small stars and a paper boat repeat the illustrated world. Disclosure corners are gently softened; note corners are asymmetric. Dividers and marginalia rotate by small amounts rather than forming a perfectly mechanical grid.
+Outline icons have rounded caps and joins with slightly irregular paths. Small stars and flame marks repeat the illustrated world. Disclosure corners are gently softened; note corners are asymmetric. Dividers and marginalia rotate by small amounts rather than forming a perfectly mechanical grid.
 
 ## Components
 
@@ -105,7 +105,7 @@ Outline icons have rounded caps and joins with slightly irregular paths. Small s
 - **Revealed note:** inset tonal paper with an imperfect dashed top edge, small label, relaxed prose and handwritten afterthought. Warm and moon variants gently change local ink and surface colors.
 - **Masked date:** tabular body numerals with handwritten rose `x` characters. Accessible labels describe unknown dates; masked dates must remain intentionally incomplete.
 - **Locked entry:** a passive row with faded ink and a lock. It has no interactive target and does not pretend to unlock.
-- **Motion:** link and title transitions use 200ms; chevrons use 240ms. Supporting browsers animate native disclosure height over 300ms. Reduced-motion preferences remove transitions and smooth scrolling.
+- **Motion:** link and title transitions use 200ms; chevrons use 240ms. On `/story`, layered flame tongues flicker at different rhythms while the glow breathes and a few embers drift slowly over the page. Supporting browsers animate native disclosure height over 300ms. Reduced-motion preferences remove transitions, ambient animation and smooth scrolling.
 
 ## Do's and Don'ts
 

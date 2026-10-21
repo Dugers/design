@@ -4,7 +4,7 @@ Disposition: **provisional pass for source coverage; finish approval withheld pe
 
 **THESIS** — Supported. Russian copy, quiet opening, restrained mystery, and five compact timeline entries match the brief. Exact opening wording is present.
 
-**OWN-WORLD** — Supported by inspected assets and source. Warm charcoal, muted pink, cream, irregular SVG contours, and paper texture form a coherent direction. The generated boat illustration carries the avatar’s brown outlines and pink star. Its compositing within the page remains unverified.
+**OWN-WORLD** — The October 22 update carries the warm charcoal palette into ember, copper, and amber. The hero uses an outlined flame that matches the existing hand-drawn icons, with slow firelight and sparse floating embers across the page. The new composition remains unverified in a browser.
 
 **STORY** — Supported. Clear opening → “Посмотрим, что дальше” → event rows → inline notes. Three native disclosures and two visibly closed entries. Copy avoids explicit dinner, Halloween, or relationship-question spoilers.
 

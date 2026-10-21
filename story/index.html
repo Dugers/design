@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#171416" />
+    <meta name="theme-color" content="#1b1411" />
     <meta name="description" content="Некоторые события становятся частью чего-то большего. Маленькое собрание еще не объясненных совпадений." />
     <meta name="robots" content="noindex, nofollow" />
     <title>Между строк · некоторые совпадения</title>
@@ -11,13 +11,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../style.css?v=story-fire-3" />
     <script src="../script.js" defer></script>
   </head>
-  <body>
+  <body class="story-page">
     <!--
       THESIS: A quiet hand-drawn mystery journal, revealed through small observations.
-      OWN-WORLD: Warm charcoal paper, muted rose, imperfect pencil icons and a tiny sea voyage.
+      OWN-WORLD: Warm charcoal paper, ember marks, imperfect pencil icons and slow firelight.
       STORY: Read the opening thought, follow the thread, unfold a few unfinished notes.
       FIDELITY: Avatar-inspired outlined illustration, restrained romance, provisional masked dates.
       FINISH: Native keyboard-friendly disclosures, responsive composition, reduced-motion support.
@@ -39,6 +39,8 @@
       </defs>
     </svg>
 
+    <div class="ember-field" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
     <a class="skip-link" href="#entries">Перейти к записям</a>
 
     <header class="site-header page-width">
@@ -58,8 +60,28 @@
         </div>
         <div class="intro-art" aria-hidden="true">
           <span class="art-note">случайно ли?</span>
-          <img src="../assets/night-sea.webp" alt="" width="1536" height="1024" fetchpriority="high" />
-          <span class="art-caption">даже у маленького кораблика<br />есть свой маршрут</span>
+          <svg class="fire-drawing" viewBox="0 0 260 320">
+            <defs>
+              <linearGradient id="story-fire-main" x1="0" x2="1" y1="1" y2="0">
+                <stop offset="0" stop-color="#e95827" />
+                <stop offset="1" stop-color="#ff9b3f" />
+              </linearGradient>
+              <linearGradient id="story-fire-core" x1="0" x2="0" y1="1" y2="0">
+                <stop offset="0" stop-color="#ffad42" />
+                <stop offset="1" stop-color="#ffe08b" />
+              </linearGradient>
+            </defs>
+            <g class="flame-body">
+              <path class="fire-outline" fill="url(#story-fire-main)" d="M131 22c13 42-23 61-19 94 9-11 16-25 18-39 41 42 71 82 65 133-5 50-34 82-76 82-45 0-80-34-78-78 1-36 22-61 43-86-2 31 6 45 21 50-2-26 10-57 26-76 22-27 20-54 0-80Z" />
+              <path class="fire-core" fill="url(#story-fire-core)" d="M130 123c7 24 28 42 29 73 1 31-18 53-45 53-24 0-42-18-40-42 1-18 13-32 22-47-1 17 4 25 13 29-4-25 8-48 21-66Z" />
+              <path class="fire-hot" fill="#fff0b9" d="M125 184c8 11 17 21 17 35 0 15-10 25-25 25-13 0-22-9-21-22 0-9 7-18 13-26 0 9 4 14 10 15-2-10 1-19 6-27Z" />
+              <path class="fire-highlight" d="M84 219c-6 22 5 40 19 47m76-83c8 23 5 43-5 58" />
+            </g>
+            <path class="fire-spark spark-one" d="m57 104 4 12 12 4-12 4-4 12-4-12-12-4 12-4Z" />
+            <path class="fire-spark spark-two" d="m206 153 3 9 9 3-9 3-3 9-3-9-9-3 9-3Z" />
+            <circle class="fire-speck" cx="72" cy="169" r="3" />
+            <circle class="fire-speck" cx="188" cy="88" r="3" />
+          </svg>
         </div>
       </section>
 
@@ -153,12 +175,12 @@
             <details class="entry-disclosure" data-entry="warmth">
               <summary>
                 <span class="event-icon event-icon--sand"><svg aria-hidden="true"><use href="#i-flame" /></svg></span>
-                <span class="entry-main"><span class="entry-title">Чуть теплее, чем обычно</span><span class="entry-teaser">У некоторых вечеров своя температура.</span></span>
-                <span class="entry-date"><time datetime="2026-10-23">23.10.2026</time></span>
+                <span class="entry-main"><span class="entry-title">Чуть теплее, чем обычно</span><span class="entry-teaser">Некоторые вечера начинаются задолго до заката.</span></span>
+                <span class="entry-date"><time datetime="2026-10-22">22.10.2026</time></span>
                 <span class="entry-action"><svg aria-hidden="true"><use href="#i-chevron" /></svg><span class="sr-only">Показать или скрыть запись</span></span>
               </summary>
               <div class="entry-panel"><div class="entry-panel-inner">
-                <div class="revealed-note warmth-note"><span class="note-label">Небольшое наблюдение</span><p>Не всякое тепло можно объяснить прогнозом погоды.</p><p>Остальные подробности пока потерялись.<br />Кажется, они найдутся в свое время.</p><p class="handwritten note-afterthought">На всякий случай: вечер лучше оставить свободным.</p></div>
+                <div class="revealed-note warmth-note"><span class="note-label">Небольшое наблюдение</span><p>Не всякое тепло можно объяснить прогнозом погоды.</p><p>Солнце еще высоко, а день уже обещает стать особенным.<br />Остальные подробности пока потерялись. Кажется, они найдутся в свое время.</p><p class="handwritten note-afterthought">Этот сюрприз будет дорогого стоить. И все же захочется заплатить чуть больше.</p></div>
               </div></div>
             </details>
           </article>

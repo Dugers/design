@@ -20,7 +20,7 @@ A personal interactive story spanning October and November 2026. Real encounters
 - Small category icons hint at the nature of an event.
 - Some entries expand inline to reveal more text.
 - Authorized history: 25.09.2026 first online messages; 04.10 first in-person meeting; 08.10 argument; 09.10 reconciliation; 10.10 first kiss and mutual declaration. Do not publish private specifics about other contacts.
-- Preserve «Чуть теплее, чем обычно» with 23.10.2026. «Когда темнота не страшная» uses xx.11.2026. A title-hidden, icon-free locked row uses 0x.11.2026. «Поправка к легенде» uses xx.11.2026 and hints at the future personal question through an unfinished map legend; its second layer unfolds natively. «Продолжение следует» uses xx.xx.xxxx.
+- Preserve «Чуть теплее, чем обычно» with 22.10.2026. «Когда темнота не страшная» uses xx.11.2026. A title-hidden, icon-free locked row uses 0x.11.2026. «Поправка к легенде» uses xx.11.2026 and hints at the future personal question through an unfinished map legend; its second layer unfolds natively. «Продолжение следует» uses xx.xx.xxxx.
 - Chapter wording is provisional; event count and dates must not dominate.
 - Public chapter copy must hint through images and motifs, never directly recount messages, meetings, arguments, reconciliation or declarations. Preserve the entire «Поправка к легенде» chapter verbatim; the user explicitly approved its wording. Every visible chapter icon should be distinct; the hidden-title row has no icon.
 - Future chapters may have distinct visual identities and change over time. Scheduling, editing and persistence are outside this prototype.
