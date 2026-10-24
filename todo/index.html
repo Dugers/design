@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f2f3ee" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="Личный дневник простых действий. Отмечай сделанное и смотри историю по дням." />
+    <title>День за днём · Мои действия</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="todo.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6" /></symbol>
+        <symbol id="i-door" viewBox="0 0 24 24"><path d="M4 21h16M6 21V4l12-2v19M10 12h.01" /></symbol>
+        <symbol id="i-pill" viewBox="0 0 24 24"><path d="m8.5 15.5 7-7M5 19a5.66 5.66 0 0 1 0-8l6-6a5.66 5.66 0 0 1 8 8l-6 6a5.66 5.66 0 0 1-8 0ZM8 8l8 8" /></symbol>
+        <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></symbol>
+        <symbol id="i-left" viewBox="0 0 24 24"><path d="m14 6-6 6 6 6" /></symbol>
+        <symbol id="i-right" viewBox="0 0 24 24"><path d="m10 6 6 6-6 6" /></symbol>
+        <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6 7l1 14h10l1-14M10 11v6M14 11v6" /></symbol>
+        <symbol id="i-settings" viewBox="0 0 24 24"><path d="M4 7h6m4 0h6M4 17h10m4 0h2" /><circle cx="12" cy="7" r="2" /><circle cx="16" cy="17" r="2" /></symbol>
+        <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" /></symbol>
+        <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></symbol>
+        <symbol id="i-calendar" viewBox="0 0 24 24"><path d="M5 5h14v16H5ZM8 3v4m8-4v4M5 10h14m-9 4h.01m4 0h.01m-4 3h.01m4 0h.01" /></symbol>
+      </defs>
+    </svg>
+    <a class="skip-link" href="#day-title">Перейти к действиям</a>
+    <header class="site-header shell">
+      <a class="brand" href="./" aria-label="День за днём — сегодня"><span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#i-check" /></svg></span>день за днём</a>
+      <button class="settings-toggle text-button" type="button" id="settings-toggle" aria-label="Настройки" aria-expanded="false" aria-controls="settings-panel"><svg class="icon" aria-hidden="true"><use href="#i-settings" /></svg><span>Настройки</span></button>
+    </header>
+    <main class="shell">
+      <section class="settings-panel" id="settings-panel" aria-labelledby="settings-title" hidden>
+        <div class="section-heading"><h2 id="settings-title">Часовой пояс</h2><button class="icon-button" id="close-settings" type="button" aria-label="Закрыть настройки"><svg class="icon" aria-hidden="true"><use href="#i-close" /></svg></button></div>
+        <label for="time-zone">В каком времени показывать дни и отметки</label>
+        <select id="time-zone"></select>
+        <p class="field-help">По умолчанию — Красноярск. При смене пояса время и дни в истории пересчитаются.</p>
+      </section>
+      <div class="intro"><h1>Одной заботой меньше.</h1><p>Отметь, что сделано.<br class="mobile-break" /> Время останется здесь.</p></div>
+      <div class="storage-error" id="storage-error" role="alert" hidden></div>
+      <noscript><p class="storage-error">Для отметок и сохранения истории включи JavaScript в браузере.</p></noscript>
+      <section class="day-section" aria-labelledby="day-title">
+        <div class="date-toolbar">
+          <div class="day-heading"><h2 id="day-title" tabindex="-1">Сегодня</h2><p id="day-subtitle"></p></div>
+          <div class="date-controls">
+            <button class="text-button today-button" id="go-today" type="button" hidden>К сегодня</button>
+            <label class="date-picker" for="date-picker"><svg class="icon" aria-hidden="true"><use href="#i-calendar" /></svg><span class="sr-only">Выбрать день</span><input id="date-picker" type="date" aria-label="Выбрать день" /></label>
+          </div>
+        </div>
+        <nav class="week-navigation" aria-label="История по дням">
+          <button class="icon-button" id="previous-week" type="button" aria-label="Предыдущая неделя"><svg class="icon" aria-hidden="true"><use href="#i-left" /></svg></button>
+          <div class="week-days" id="week-days"></div>
+          <button class="icon-button" id="next-week" type="button" aria-label="Следующая неделя"><svg class="icon" aria-hidden="true"><use href="#i-right" /></svg></button>
+        </nav>
+        <p class="history-notice" id="history-notice" hidden>Это история дня. Новые отметки можно сделать сегодня.</p>
+        <div class="actions" id="actions" aria-label="Действия за выбранный день"></div>
+        <div class="empty-state" id="empty-state" hidden><svg class="empty-icon icon" aria-hidden="true"><use href="#i-calendar" /></svg><h3 id="empty-title">Здесь пока нет действий</h3><p id="empty-copy">Добавь то, что хочется не держать в голове.</p></div>
+        <div class="add-section" id="add-section">
+          <button class="add-toggle" type="button" id="add-toggle" aria-expanded="false" aria-controls="add-form"><svg class="icon" aria-hidden="true"><use href="#i-plus" /></svg>Добавить действие</button>
+          <form class="add-form" id="add-form" hidden>
+            <label for="action-title">Что хочется сделать?</label>
+            <input id="action-title" name="title" type="text" placeholder="Например, выключить утюг" maxlength="120" required autocomplete="off" />
+            <fieldset><legend>Когда</legend><div class="choice-group"><label class="choice"><input type="radio" name="schedule" value="once" checked /><span>На сегодня</span></label><label class="choice"><input type="radio" name="schedule" value="daily" /><span>Каждый день</span></label></div></fieldset>
+            <fieldset id="kind-field" hidden disabled><legend>Как отмечать</legend><div class="kind-choices"><label class="kind-choice"><input type="radio" name="kind" value="check" checked /><span><strong>Галочка</strong><small>Один раз за день</small></span></label><label class="kind-choice"><input type="radio" name="kind" value="repeat" /><span><strong>Несколько отметок</strong><small>Время каждого раза</small></span></label></div></fieldset>
+            <p class="field-help" id="schedule-help">Появится только сегодня. Выполнение отмечается галочкой.</p>
+            <div class="form-actions"><button class="primary-button" type="submit">Добавить</button><button class="text-button" type="button" id="cancel-add">Отмена</button></div>
+          </form>
+        </div>
+      </section>
+      <footer class="page-footer"><p><span class="save-dot" aria-hidden="true"></span><span id="save-label">Сохраняется в этом браузере</span></p><button class="text-button zone-button" type="button" id="zone-shortcut"><svg class="icon" aria-hidden="true"><use href="#i-clock" /></svg><span id="zone-label">Красноярск · UTC+7</span></button><p class="local-note">История хранится только на этом устройстве. Очистка данных браузера удалит её.</p></footer>
+    </main>
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden><svg class="icon" aria-hidden="true"><use href="#i-check" /></svg><span id="toast-message"></span></div>
+    <dialog id="delete-dialog" aria-labelledby="delete-title" aria-describedby="delete-description"><form method="dialog"><div class="section-heading"><h2 id="delete-title">Удалить действие?</h2><button class="icon-button" value="cancel" aria-label="Закрыть"><svg class="icon" aria-hidden="true"><use href="#i-close" /></svg></button></div><p id="delete-name" class="delete-name"></p><p id="delete-description">Действие больше не будет появляться. Все прежние отметки останутся в истории.</p><div class="form-actions"><button class="primary-button danger-button" value="delete">Удалить действие</button><button class="text-button" value="cancel" autofocus>Оставить</button></div></form></dialog>
+  </body>
+</html>

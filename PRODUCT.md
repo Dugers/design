@@ -9,7 +9,7 @@ web
 Static HTML, CSS and JavaScript. No runtime dependencies or framework. A small Node build copies public files to dist for GitHub Pages.
 
 ## Users
-The homepage is a design studio portfolio for visitors discovering 22:18. Katya can find a personal story through one illustrated portfolio artwork. Anton maintains both surfaces.
+The homepage is a design studio portfolio for visitors discovering 22:18. Katya can find a personal story through one illustrated portfolio artwork and use the personal daily action journal at /design/todo/. Anton maintains these surfaces.
 
 ## Product Purpose
 A convincing independent studio portfolio at /design/, with a preserved interactive personal story at /design/story/. The studio page must stand on its own without romantic hints, riddles or secret labels.
@@ -24,6 +24,7 @@ A convincing independent studio portfolio at /design/, with a preserved interact
 - Authorized story chapters: first online messages 25.09, first meeting 04.10, argument 08.10, reconciliation 09.10, first kiss and mutual declaration 10.10. The cause of the argument remains private.
 - Future masks: warmth 23.10.2026; darkness xx.11.2026; unnamed icon-free locked chapter 0x.11.2026; map-legend finale hint xx.11.2026; continuation xx.xx.xxxx. The finale remains open to any real-world scenario and personal response.
 - Original personal reference photographs must not enter public assets or the deployment.
+- A separate /todo/ route is a personal action journal with localStorage persistence, a day-by-day history, timestamped door and pill actions, one-off checkboxes, and daily checkbox or repeated actions. Archiving actions preserves recorded history. It defaults to Krasnoyarsk time and offers timezone selection, including device time. Journal data stays in the current browser.
 - Story remains a static prototype: no automatic timed unlock, administration, persistence or server.
 
 ## Brand Commitments

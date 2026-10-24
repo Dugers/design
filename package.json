@@ -7,6 +7,6 @@
     "dev": "python3 -m http.server 5173 --bind 127.0.0.1",
     "start": "python3 -m http.server 5173 --bind 127.0.0.1",
     "build": "node scripts/build.mjs",
-    "check": "node --check script.js && node --check studio.js && npm run build && node scripts/check-site.mjs"
+    "check": "node --check script.js && node --check studio.js && node --check todo/app.js && node scripts/check-todo.mjs && npm run build && node scripts/check-site.mjs"
   }
 }

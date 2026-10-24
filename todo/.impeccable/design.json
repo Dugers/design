@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-24T17:27:54.900184+00:00",
+  "title": "Design System: День за днём",
+  "extensions": {
+    "shadows": [
+      {
+        "name": "toast",
+        "value": "0 8px 24px rgb(32 35 31 / .16)",
+        "purpose": "The single raised save-feedback surface."
+      }
+    ],
+    "motion": [
+      {
+        "name": "toast-duration",
+        "value": "180ms",
+        "purpose": "Save toast reveal, only with prefers-reduced-motion: no-preference."
+      },
+      {
+        "name": "toast-easing",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "Opacity and clip-path toast reveal."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile",
+        "value": "620px"
+      },
+      {
+        "name": "compact",
+        "value": "360px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "description": "Recorded journal action with an explicit hover and keyboard focus state.",
+      "html": "<button type=\"button\" class=\"ds-primary\">Я закрыла дверь</button>",
+      "css": ".ds-primary {display:inline-flex;min-height:48px;padding:12px 22px;align-items:center;justify-content:center;gap:10px;border:0;border-radius:8px;font:500 16px/1.4 Cantarell,sans-serif;cursor:pointer;background:var(--green, #304f40);color:var(--surface, #f2f3ee);} .ds-primary:hover {background:#243e31;} .ds-primary:focus-visible { outline: 2px solid var(--accent, #bc321c); outline-offset: 4px; } .ds-primary:disabled {opacity:.4;cursor:default;}",
+      "refersTo": "button-primary"
+    },
+    {
+      "name": "Saved repeat action",
+      "kind": "button",
+      "description": "Recorded journal action with an explicit hover and keyboard focus state.",
+      "html": "<button type=\"button\" class=\"ds-saved\">Отметить ещё раз</button>",
+      "css": ".ds-saved {display:inline-flex;min-height:48px;padding:12px 22px;align-items:center;justify-content:center;gap:10px;border:0;border-radius:8px;font:500 16px/1.4 Cantarell,sans-serif;cursor:pointer;background:var(--green-soft, #e4ebe2);color:var(--green, #304f40);} .ds-saved:hover {background:#d6e2d4;} .ds-saved:focus-visible { outline: 2px solid var(--accent, #bc321c); outline-offset: 4px; } .ds-saved:disabled {opacity:.4;cursor:default;}",
+      "refersTo": "button-saved"
+    },
+    {
+      "name": "Destructive action",
+      "kind": "button",
+      "description": "Recorded journal action with an explicit hover and keyboard focus state.",
+      "html": "<button type=\"button\" class=\"ds-danger\">Удалить действие</button>",
+      "css": ".ds-danger {display:inline-flex;min-height:48px;padding:12px 22px;align-items:center;justify-content:center;gap:10px;border:0;border-radius:8px;font:500 16px/1.4 Cantarell,sans-serif;cursor:pointer;background:#9c321e;color:var(--surface, #f2f3ee);} .ds-danger:hover {background:#7e2718;} .ds-danger:focus-visible { outline: 2px solid var(--accent, #bc321c); outline-offset: 4px; } .ds-danger:disabled {opacity:.4;cursor:default;}",
+      "refersTo": "button-danger"
+    },
+    {
+      "name": "Action title field",
+      "kind": "input",
+      "description": "Visible label and native text input used by the inline add form.",
+      "html": "<label class=\"ds-field-label\" for=\"ds-title\">Что хочется сделать?</label><input class=\"ds-field\" id=\"ds-title\" placeholder=\"Например, выключить утюг\" maxlength=\"120\" required />",
+      "css": ".ds-field-label {display:block;margin-bottom:9px;color:var(--ink, #20231f);font:15px/1.5 Cantarell,sans-serif;} .ds-field {width:100%;min-height:50px;border:1px solid #83887b;border-radius:8px;padding:12px 14px;color:var(--ink, #20231f);background:#fafbf7;font:17px/1.5 Cantarell,sans-serif;} .ds-field::placeholder {color:var(--muted, #62665d);opacity:1;} .ds-field:focus-visible { outline: 2px solid var(--accent, #bc321c); outline-offset: 4px; }",
+      "refersTo": "field"
+    },
+    {
+      "name": "Day navigation",
+      "kind": "nav",
+      "description": "The selected day uses a solid green surface; recorded days carry a dot.",
+      "html": "<nav class=\"ds-week\" aria-label=\"История по дням\"><button class=\"ds-day\" type=\"button\"><span class=\"ds-weekday\">пн</span><span class=\"ds-number\">19</span></button><button class=\"ds-day ds-recorded\" type=\"button\" aria-current=\"date\"><span class=\"ds-weekday\">вт</span><span class=\"ds-number\">20</span></button><button class=\"ds-day ds-today\" type=\"button\"><span class=\"ds-weekday\">ср</span><span class=\"ds-number\">21</span></button></nav>",
+      "css": ".ds-week {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;padding:14px 0;border-block:1px solid var(--line, #c9ccc3);max-width:280px;} .ds-day {position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;min-height:70px;padding:7px 2px 12px;border:0;border-radius:12px;color:var(--ink, #20231f);background:transparent;font-family:Cantarell,sans-serif;font-variant-numeric:tabular-nums;cursor:pointer;} .ds-weekday {font-size:12px;color:var(--muted, #62665d);} .ds-number {font-size:20px;line-height:1.2;} .ds-day:hover {background:#e5e7df;} .ds-day[aria-current=\"date\"] {background:var(--green, #304f40);color:var(--surface, #f2f3ee);} .ds-day[aria-current=\"date\"] .ds-weekday {color:#e0e8de;} .ds-today .ds-number {text-decoration:underline;text-underline-offset:5px;} .ds-recorded::after {content:\"\";position:absolute;bottom:5px;width:4px;height:4px;border-radius:50%;background:currentColor;} .ds-day:focus-visible { outline: 2px solid var(--accent, #bc321c); outline-offset: 4px; }",
+      "refersTo": "day-selected"
+    },
+    {
+      "name": "Daily checkbox",
+      "kind": "input",
+      "description": "A native checkbox with visible checked text and a green saved state.",
+      "html": "<label class=\"ds-check\"><input type=\"checkbox\" checked /><span>Сделано</span></label>",
+      "css": ".ds-check {display:flex;align-items:center;gap:12px;min-height:48px;cursor:pointer;color:var(--ink, #20231f);font:16px/1.5 Cantarell,sans-serif;} .ds-check input {appearance:none;display:grid;place-items:center;width:26px;height:26px;border:1.5px solid #83887b;border-radius:6px;background:transparent;margin:0;cursor:pointer;flex-shrink:0;} .ds-check input:checked {border-color:var(--green, #304f40);background:var(--green, #304f40);} .ds-check input:checked::after {content:\"\";width:10px;height:6px;border:solid var(--surface, #f2f3ee);border-width:0 0 2px 2px;transform:translateY(-1px) rotate(-45deg);} .ds-check input:checked+span {color:var(--green, #304f40);} .ds-check input:focus-visible { outline: 2px solid var(--accent, #bc321c); outline-offset: 4px; }"
+    },
+    {
+      "name": "Timestamp history",
+      "kind": "chip",
+      "description": "Native disclosure exposes repeated recorded facts as compact time chips.",
+      "html": "<details class=\"ds-history\"><summary>Все отметки за день · 2</summary><ol class=\"ds-times\"><li><time>08:14:23</time></li><li><time>12:35:08</time></li></ol></details>",
+      "css": ".ds-history {color:var(--muted, #62665d);font:13px/1.5 Cantarell,sans-serif;} .ds-history summary {cursor:pointer;padding-block:5px;width:fit-content;} .ds-history summary:hover {color:var(--green, #304f40);} .ds-history summary:focus-visible { outline: 2px solid var(--accent, #bc321c); outline-offset: 4px; } .ds-times {display:flex;flex-wrap:wrap;gap:8px;margin:9px 0 0;padding:0;list-style:none;} .ds-times time {display:block;padding:4px 9px;background:var(--green-soft, #e4ebe2);border-radius:5px;color:var(--green, #304f40);font-variant-numeric:tabular-nums;}",
+      "refersTo": "time-chip"
+    },
+    {
+      "name": "Text action",
+      "kind": "button",
+      "description": "Quiet inline settings, cancel and history actions.",
+      "html": "<button type=\"button\" class=\"ds-text\">Настройки</button>",
+      "css": ".ds-text {display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:8px 0;border:0;background:transparent;color:var(--muted, #62665d);font:14px/1.5 Cantarell,sans-serif;cursor:pointer;} .ds-text:hover {color:var(--green, #304f40);text-decoration:underline;text-underline-offset:4px;} .ds-text:focus-visible { outline: 2px solid var(--accent, #bc321c); outline-offset: 4px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Daily Action Journal",
+    "overview": "A calm, readable place to record an action and return to its time. The limestone surface, ink and locally hosted Cantarell inherit the studio’s visual foundation. Deep green gives actions and saved facts their own quiet identity. This document governs only the `todo/` route; the studio and story retain their own design authority.\n\nDates, status and existing facts lead the hierarchy. A single unboxed list keeps the experience practical and personal, with no decorative imagery or competing dashboard summaries.",
+    "keyCharacteristics": [
+      "Recorded times remain prominent and easy to scan.",
+      "Flat, unboxed rows use fine rules and generous spacing.",
+      "Green identifies actions, selected dates and saved states.",
+      "Forms expand inline; destructive confirmation uses a native dialog."
+    ],
+    "rules": [
+      {
+        "name": "The Saved Fact Rule",
+        "body": "Use green state and a visible timestamp together to communicate a recorded action; color alone is insufficient.",
+        "section": "colors"
+      },
+      {
+        "name": "The Time First Rule",
+        "body": "Keep the recorded time larger than supporting status and schedule text. Do not replace exact times with achievement language.",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "Do retain the local Cantarell family, limestone surface and ink foundation.",
+      "Do put real dates, recorded status and exact times before secondary controls.",
+      "Do preserve visible keyboard focus, native control semantics and announced feedback.",
+      "Do stack status and full-width recording controls on small screens.",
+      "Do keep additions and settings inline and use a native dialog for deletion."
+    ],
+    "donts": [
+      "Don't add card shells or ambient shadows to action rows.",
+      "Don't invent recorded actions, completion scores, streaks or pressure to perform.",
+      "Don't hide the recorded time when showing a completed state.",
+      "Don't show historical days as editable or future dates as available.",
+      "Don't imply remote synchronization or successful saving after storage failure."
+    ]
+  }
+}

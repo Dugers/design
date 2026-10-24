@@ -7,12 +7,14 @@ import vm from 'node:vm';
 const root = fileURLToPath(new URL('../dist/', import.meta.url));
 const origin = 'https://dugers.github.io';
 const base = '/design/';
-const files = ['index.html', 'story/index.html', 'studio.css', 'style.css'];
+const files = ['index.html', 'story/index.html', 'todo/index.html', 'studio.css', 'style.css', 'todo/todo.css'];
 let count = 0;
+const stylesheetPages = { 'studio.css': 'index.html', 'style.css': 'story/index.html', 'todo/todo.css': 'todo/index.html' };
 for (const file of files) {
   const source = await readFile(resolve(root, file), 'utf8');
   const page = new URL(base + file.replace(/index\.html$/, ''), origin);
-  const ids = new Set([...source.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]));
+  const markup = file.endsWith('.css') ? await readFile(resolve(root, stylesheetPages[file]), 'utf8') : source;
+  const ids = new Set([...markup.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]));
   const refs = file.endsWith('.css')
     ? [...source.matchAll(/url\(['"]?([^)'"\s]+)['"]?\)/g)].map(match => match[1])
     : [...source.matchAll(/\b(?:href|src)="([^"]+)"/g)].map(match => match[1]);
@@ -47,4 +49,4 @@ entries[1].open = true;
 listeners[1]();
 assert.equal(entries[0].open, false);
 assert.equal(entries[1].open, true);
-console.log(`PASS: ${count} local references resolve under ${base}; both page routes, artwork link, five projects, story date, and chapter interaction verified.`);
+console.log(`PASS: ${count} local references resolve under ${base}; all three page routes, artwork link, five projects, story date, and chapter interaction verified.`);
