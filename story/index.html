@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#1b1411" />
+    <meta name="theme-color" content="#17131c" />
     <meta name="description" content="Некоторые события становятся частью чего-то большего. Маленькое собрание еще не объясненных совпадений." />
     <meta name="robots" content="noindex, nofollow" />
     <title>Между строк · некоторые совпадения</title>
@@ -11,13 +11,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../style.css?v=story-fire-3" />
+    <link rel="stylesheet" href="../style.css?v=story-halloween-3" />
     <script src="../script.js" defer></script>
+    <script src="halloween.js?v=2" defer></script>
   </head>
   <body class="story-page">
     <!--
       THESIS: A quiet hand-drawn mystery journal, revealed through small observations.
-      OWN-WORLD: Warm charcoal paper, ember marks, imperfect pencil icons and slow firelight.
+      OWN-WORLD: Plum-black paper, copper marks, imperfect pencil icons and a candlelit pumpkin.
       STORY: Read the opening thought, follow the thread, unfold a few unfinished notes.
       FIDELITY: Avatar-inspired outlined illustration, restrained romance, provisional masked dates.
       FINISH: Native keyboard-friendly disclosures, responsive composition, reduced-motion support.
@@ -29,6 +30,7 @@
         <symbol id="i-path" viewBox="0 0 40 40"><path d="M10 7c-8 7-7 22 3 24 10 1 16-17 21-14 6 5-2 17-8 18M5 5l8-2 2 8M30 6l1 4m5-5-4 1" /><circle cx="9" cy="31" r="3" /></symbol>
         <symbol id="i-flame" viewBox="0 0 40 40"><path d="M22 3c4 12-7 12-3 19 3 0 5-4 5-6 9 7 10 19-3 21C7 39 3 28 10 18c-1 6 2 6 3 3C15 15 14 9 22 3Z" /><path d="M18 36c-5-3-3-8 1-12 0 5 7 6 4 12" /></symbol>
         <symbol id="i-moon" viewBox="0 0 40 40"><path d="M28 5C8 1 1 24 14 33c9 7 20 0 22-6C17 32 12 13 28 5Z" /><path d="m32 6 1 7m-4-4 7 1" /></symbol>
+        <symbol id="i-pumpkin" viewBox="0 0 40 40"><path d="M20 11c-5-5-15-1-16 10-2 11 6 16 16 14 10 2 18-4 16-14-1-10-11-15-16-10ZM19 10l1-7 5 1-3 7M13 11c-6 7-6 17-1 23m15-23c6 7 6 17 1 23" /><path d="m11 21 4-5 3 6Zm12 1 3-6 4 5ZM11 26l5 3 4-2 4 2 6-4c-3 8-15 10-19 1Z" /></symbol>
         <symbol id="i-envelope" viewBox="0 0 40 40"><path d="m4 11 30-2 2 23-31 2Z" /><path d="m5 12 15 12L34 10M5 32l11-13m9 1 10 11" /></symbol>
         <symbol id="i-crossing" viewBox="0 0 40 40"><path d="M5 8c14-2 12 26 30 24M6 33C19 35 21 6 35 8" /><circle cx="20" cy="20" r="3" /></symbol>
         <symbol id="i-storm" viewBox="0 0 40 40"><path d="M10 25C1 24 3 13 12 14 12 2 30 2 30 15c9-1 10 11 1 11M21 18l-7 12 8-1-4 9M8 30l-2 5m24-4-1 5" /></symbol>
@@ -36,10 +38,36 @@
         <symbol id="i-lock" viewBox="0 0 24 24"><path d="M7 10V7c0-7 11-7 10 0v3M5 11l14-1 1 11-15 1Z" /><path d="m12 15 .2 3" /></symbol>
         <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" /></symbol>
         <symbol id="i-arrow" viewBox="0 0 32 32"><path d="M5 11c1 9 10 13 21 7M18 13l9 5-5 8" /></symbol>
+        <symbol id="night-branches" viewBox="0 0 200 700">
+          <path d="M-10 700 5 510 2 379 20 288 13 186 25 105 22 21 34 100 28 187 39 262 54 228 62 157 79 116 69 169 68 240 44 300 27 390 34 498 29 700Z" />
+          <path d="m13 395 55-72 22-70 44-46 29-17-24 26-35 44-20 75-48 74Zm19-111 47-20 40-37 44-12-38 23-39 41-48 21ZM17 205l-29-45 2-75 9 68 23 32Zm46 38 43-52 8-44 5 49-43 61ZM9 498l74-68 26-57 32-27-21 36-25 61-73 73Z" />
+          <path d="m106 264 41 4 40-17-38 27-47-1ZM55 344l-5-50-19-35 25 27 10 45Zm28 92 51-11 37-33-30 44-54 13Z" />
+        </symbol>
       </defs>
     </svg>
 
-    <div class="ember-field" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="night-motes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="night-fog" aria-hidden="true"><i></i><i></i></div>
+    <div class="night-canopy" aria-hidden="true">
+      <svg class="night-tree night-tree--left" viewBox="0 0 200 700" preserveAspectRatio="none"><use href="#night-branches" /></svg>
+      <svg class="night-tree night-tree--right" viewBox="0 0 200 700" preserveAspectRatio="none"><use href="#night-branches" /></svg>
+      <svg class="night-watch night-watch--left" viewBox="0 0 80 30">
+        <path d="M5 8 29 15 23 21 10 17Zm46 7 24-7-5 9-13 4Z" />
+        <path class="watch-slits" d="m19 12 1 7m40-7-1 7" />
+      </svg>
+      <svg class="night-watch night-watch--right" viewBox="0 0 80 30">
+        <path d="M5 8 29 15 23 21 10 17Zm46 7 24-7-5 9-13 4Z" />
+        <path class="watch-slits" d="m19 12 1 7m40-7-1 7" />
+      </svg>
+    </div>
+    <div class="night-passage" aria-hidden="true">
+      <svg viewBox="0 0 180 100">
+        <g class="passing-wings">
+          <path d="M88 48C60 10 27 9 2 15c15 12 22 26 26 43 15-9 28-4 35 11 11-8 17-4 25 4Zm4 0c28-38 61-39 86-33-15 12-22 26-26 43-15-9-28-4-35 11-11-8-17-4-25 4Z" />
+        </g>
+        <path d="m82 45-1-14 10 8 9-8-1 15 6 22-14 19-15-19Z" />
+      </svg>
+    </div>
 
     <a class="skip-link" href="#entries">Перейти к записям</a>
 
@@ -60,27 +88,62 @@
         </div>
         <div class="intro-art" aria-hidden="true">
           <span class="art-note">случайно ли?</span>
-          <svg class="fire-drawing" viewBox="0 0 260 320">
+          <svg class="pumpkin-drawing" viewBox="0 0 400 400">
             <defs>
-              <linearGradient id="story-fire-main" x1="0" x2="1" y1="1" y2="0">
-                <stop offset="0" stop-color="#e95827" />
-                <stop offset="1" stop-color="#ff9b3f" />
+              <radialGradient id="pumpkin-skin" cx="48%" cy="42%" r="66%">
+                <stop offset="0" stop-color="#ac5126" />
+                <stop offset=".62" stop-color="#71301e" />
+                <stop offset="1" stop-color="#29151d" />
+              </radialGradient>
+              <linearGradient id="pumpkin-candle" x2="0" y2="1">
+                <stop stop-color="#fff1b5" />
+                <stop offset="1" stop-color="#ffad43" />
               </linearGradient>
-              <linearGradient id="story-fire-core" x1="0" x2="0" y1="1" y2="0">
-                <stop offset="0" stop-color="#ffad42" />
-                <stop offset="1" stop-color="#ffe08b" />
-              </linearGradient>
+              <clipPath id="pumpkin-eye-cuts">
+                <path d="m106 190 71 28-19 18-40-13 8-12Z" />
+                <path d="m225 218 68-34-15 28 10 9-49 14Z" />
+              </clipPath>
             </defs>
-            <g class="flame-body">
-              <path class="fire-outline" fill="url(#story-fire-main)" d="M131 22c13 42-23 61-19 94 9-11 16-25 18-39 41 42 71 82 65 133-5 50-34 82-76 82-45 0-80-34-78-78 1-36 22-61 43-86-2 31 6 45 21 50-2-26 10-57 26-76 22-27 20-54 0-80Z" />
-              <path class="fire-core" fill="url(#story-fire-core)" d="M130 123c7 24 28 42 29 73 1 31-18 53-45 53-24 0-42-18-40-42 1-18 13-32 22-47-1 17 4 25 13 29-4-25 8-48 21-66Z" />
-              <path class="fire-hot" fill="#fff0b9" d="M125 184c8 11 17 21 17 35 0 15-10 25-25 25-13 0-22-9-21-22 0-9 7-18 13-26 0 9 4 14 10 15-2-10 1-19 6-27Z" />
-              <path class="fire-highlight" d="M84 219c-6 22 5 40 19 47m76-83c8 23 5 43-5 58" />
+            <g class="corner-web">
+              <path d="M399 4 306 12M399 4l-71 43M399 4l-37 76M399 4l-3 100M371 7q4 12 8 13 1 13 9 15 0 13 9 15M344 9q5 22 14 20 0 24 17 24-5 22 23 23M318 12q7 33 22 28-3 37 22 40-2 23 35 20" />
             </g>
-            <path class="fire-spark spark-one" d="m57 104 4 12 12 4-12 4-4 12-4-12-12-4 12-4Z" />
-            <path class="fire-spark spark-two" d="m206 153 3 9 9 3-9 3-3 9-3-9-9-3 9-3Z" />
-            <circle class="fire-speck" cx="72" cy="169" r="3" />
-            <circle class="fire-speck" cx="188" cy="88" r="3" />
+            <g class="hanging-spider">
+              <path class="spider-thread" d="M362 80v57" />
+              <path class="spider-legs" d="m359 142-8-7-4 5m12 5-12-2-5 7m17-2-11 4-2 8m18-18 8-7 4 5m-12 5 12-2 5 7m-17-2 11 4 2 8" />
+              <ellipse class="spider-body" cx="362" cy="147" rx="5" ry="8" />
+            </g>
+            <path class="pumpkin-ground" d="M83 354c55 10 162 12 229-2m-191 13c39 4 102 5 139-1" />
+            <path class="pumpkin-stem" d="M185 143c8-20 9-42 5-59l24-7c8 23 5 48-2 69Z" />
+            <path class="pumpkin-vine" d="M213 137c11-28 48-27 47-8-1 13-19 12-18 2m-28-8c11-22 30-34 43-28-7 18-21 26-43 28Z" />
+            <path class="pumpkin-shell" d="M199 145c-39-30-81-15-95 0-35-4-65 33-66 85-2 66 38 111 83 110 27 17 53 12 77 6 25 10 55 11 81-5 45 0 81-47 79-109-2-50-30-89-65-87-26-20-59-24-94 0Z" />
+            <path class="pumpkin-rib" d="M127 141c-30 26-43 73-38 114 4 38 18 65 35 84m43-198c-24 31-34 64-32 105 1 45 14 82 33 102m62-206c24 31 36 67 34 108-1 42-12 78-32 98m40-207c30 27 46 69 41 114-4 35-16 65-33 84" />
+            <path class="pumpkin-lid" d="m125 157 21-7 15 8 22-6 17 9 20-9 19 6 16-9 22 9" />
+            <path class="pumpkin-scars" d="m111 181 41 17m-32-4 2-8m9 13 3-8m104 8 42-25m-30 23-4-8m17 0-4-8M78 268l9 15-4 14m223-70-8 14 4 11" />
+            <g class="pumpkin-face">
+              <path d="m106 190 71 28-19 18-40-13 8-12Z" />
+              <path d="m225 218 68-34-15 28 10 9-49 14Z" />
+              <path d="m189 253 11-23 14 20-13-3Z" />
+              <path d="m98 256 30 13 8-12 13 23 21 3 5-13 18 17 21-1 7-15 10 11 21-9 3-15 15 9 31-19c-12 32-19 51-41 62l-8-15-20 23-10-16-22 20-16-18-18 11-7-18-17 6c-21-15-33-30-44-47Z" />
+              <g clip-path="url(#pumpkin-eye-cuts)">
+                <g class="pumpkin-gaze">
+                  <path d="m143 195-3 23 4 23 4-23Zm111-4-4 25 4 22 4-24Z" />
+                </g>
+              </g>
+            </g>
+            <path class="pumpkin-pencil" d="M59 228c0-26 8-46 18-58m244 101c-5 22-16 42-29 52" />
+            <g class="night-bat night-bat--near">
+              <path class="bat-wing bat-wing--left" d="M93 96 76 79C60 79 48 86 39 102c15-3 22 2 27 12 11-9 18-6 27 1Z" />
+              <path class="bat-wing bat-wing--right" d="m93 96 18-17c16 1 28 8 37 24-15-3-22 2-27 12-11-9-19-7-28 0Z" />
+              <path d="m88 96-1-9 7 5 6-5-1 10 3 12-8 9-8-9Z" />
+            </g>
+            <g class="night-bat night-bat--far">
+              <path class="bat-wing bat-wing--left" d="m325 67-13-14c-12 1-22 6-29 18 12-2 17 2 21 9 8-7 14-4 21 0Z" />
+              <path class="bat-wing bat-wing--right" d="m325 67 14-14c12 1 22 6 29 18-12-2-17 2-21 9-8-7-15-4-22 0Z" />
+              <path d="m321 67-1-7 5 4 5-4-1 8 2 9-6 7-6-7Z" />
+            </g>
+            <path class="night-star" d="m51 166 3 10 10 3-10 3-3 10-3-10-10-3 10-3Zm286-50 3 8 8 3-8 3-3 8-3-8-8-3 8-3Z" />
+            <circle class="night-speck" cx="143" cy="66" r="2" />
+            <circle class="night-speck" cx="365" cy="197" r="2.5" />
           </svg>
         </div>
       </section>
@@ -189,13 +252,13 @@
             <span class="thread-point" aria-hidden="true"></span>
             <details class="entry-disclosure" data-entry="lights">
               <summary>
-                <span class="event-icon event-icon--lavender"><svg aria-hidden="true"><use href="#i-moon" /></svg></span>
-                <span class="entry-main"><span class="entry-title">Когда темнота не страшная</span><span class="entry-teaser">Кажется, кто-то оставил свет.</span></span>
+                <span class="event-icon event-icon--pumpkin"><svg aria-hidden="true"><use href="#i-pumpkin" /></svg></span>
+                <span class="entry-main"><span class="entry-title">Когда темнота не страшная</span><span class="entry-teaser">В этот раз у темноты будет улыбка.</span></span>
                 <span class="entry-date" aria-label="Неизвестный день ноября 2026 года"><span class="masked">xx</span>.11.2026</span>
                 <span class="entry-action"><svg aria-hidden="true"><use href="#i-chevron" /></svg><span class="sr-only">Показать или скрыть запись</span></span>
               </summary>
               <div class="entry-panel"><div class="entry-panel-inner">
-                <div class="revealed-note moon-note"><span class="note-label">Записано на полях</span><p>В темноте привычные вещи выглядят немного иначе.<br />Особенно если смотреть на них вдвоем.</p><p class="handwritten note-afterthought">У этой записи пока не хватает деталей.</p></div>
+                <div class="revealed-note moon-note"><span class="note-label">Записано на полях</span><p>В темноте привычные вещи выглядят немного иначе.<br />Особенно если смотреть на них вдвоем.</p><p>У будущих фонарей пока нет лиц.<br />Кажется, мы придумаем их сами.</p><p class="handwritten note-afterthought">Свет внутри. Все остальное — дело наших рук.</p></div>
               </div></div>
             </details>
           </article>

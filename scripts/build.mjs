@@ -7,7 +7,7 @@ const output = resolve(root, 'dist');
 await rm(output, { recursive: true, force: true });
 await mkdir(resolve(output, 'story'), { recursive: true });
 await mkdir(resolve(output, 'todo'), { recursive: true });
-for (const file of ['index.html', 'studio.css', 'studio.js', 'style.css', 'script.js', 'story/index.html']) {
+for (const file of ['index.html', 'studio.css', 'studio.js', 'style.css', 'script.js', 'story/index.html', 'story/halloween.js']) {
   await cp(resolve(root, file), resolve(output, file));
 }
 for (const file of ['index.html', 'todo.css', 'app.js', 'model.mjs', 'favicon.svg']) {
